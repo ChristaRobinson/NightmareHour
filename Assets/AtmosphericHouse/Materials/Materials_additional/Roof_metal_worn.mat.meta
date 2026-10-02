@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c0e8e6c02537d1a45872b982fef455a3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 206616
+  packageName: Atmospheric House - Additional Materials
+  packageVersion: 1.0.0
+  assetPath: Assets/AtmosphericHouse/Materials/Materials_additional/Roof_metal_worn.mat
+  uploadId: 484737

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: da19cebdbb82b09439aa07c05f903b3e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 206616
+  packageName: Atmospheric House - Additional Materials
+  packageVersion: 1.0.0
+  assetPath: Assets/AtmosphericHouse/Materials/Materials_additional/Floor_concrete_B_clean.mat
+  uploadId: 484737

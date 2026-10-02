@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 470a0ca907e45d94184e7417edb4c1f3
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 206616
+  packageName: Atmospheric House - Additional Materials
+  packageVersion: 1.0.0
+  assetPath: Assets/AtmosphericHouse/Materials/Materials_additional/Floor_wooden_B_clean.mat
+  uploadId: 484737

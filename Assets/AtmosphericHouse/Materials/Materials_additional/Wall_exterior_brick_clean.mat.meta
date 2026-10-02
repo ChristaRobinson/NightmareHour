@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a7e0bf01ef5c37f4cbcaacf5341f0a9f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 206616
+  packageName: Atmospheric House - Additional Materials
+  packageVersion: 1.0.0
+  assetPath: Assets/AtmosphericHouse/Materials/Materials_additional/Wall_exterior_brick_clean.mat
+  uploadId: 484737
