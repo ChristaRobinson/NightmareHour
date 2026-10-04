@@ -4,7 +4,6 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class DoorKnob : MonoBehaviour
 {
-    private float _doorPositionY;
     private HingeJoint _doorHinge;
     private Rigidbody _doorRigidbody;
     private XRGrabInteractable _grabInteractable;
@@ -20,7 +19,6 @@ public class DoorKnob : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        _doorPositionY = transform.GetChild(0).transform.position.y;
         _doorHinge = transform.parent.GetComponentInChildren<HingeJoint>();
         _doorRigidbody = transform.parent.GetComponentInChildren<Rigidbody>();
         
@@ -54,10 +52,6 @@ public class DoorKnob : MonoBehaviour
         _isOpen = doorAngle > 0 ? true : false;
         LatchBolt_Unlock();
         LatchBolt_Lock();
-        
-        /*hacky fix to the door rising above the ground upon interaction.*/
-        if (_doorPositionY > 0)
-            _doorPositionY = 0;
 
     }
     private void LatchBolt_Unlock()
@@ -65,7 +59,6 @@ public class DoorKnob : MonoBehaviour
         if (_isInteracting && (_knobCurrentTurnAngle > _knobUnlockAngle && _knobCurrentTurnAngle < 330))
         {
             _doorRigidbody.constraints &= ~RigidbodyConstraints.FreezeRotationY;
-            
         }
     }
 
