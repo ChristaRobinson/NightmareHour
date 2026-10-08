@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a1c8c43f9fd79044cb5a6c0e517323e4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 206616
+  packageName: Atmospheric House - Additional Materials
+  packageVersion: 1.0.0
+  assetPath: Assets/AtmosphericHouse/Materials/Materials_additional/Wall_C_concrete_clean.mat
+  uploadId: 484737

@@ -1,0 +1,2792 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 1.9
+    smallestHole: 0.15
+    backfaceThreshold: 100
+  m_SceneGUID: 69341aa2f2a506540b1e6e7ca2eab5e4
+  m_OcclusionCullingData: {fileID: 36300000, guid: 947e5f5ec510def438ef2bcedfbe6902, type: 2}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.35346207, g: 0.40742254, b: 0.4433962, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.02
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 30b5e1a17ed173646a4cba26be68a832, type: 2}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 0.2
+    m_BakeResolution: 45
+    m_AtlasSize: 2048
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 8
+    m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 0
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 0
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 3
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 2
+    m_PVRDenoiserTypeIndirect: 2
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 0
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.1
+    m_PVRFilteringAtrousPositionSigmaIndirect: 0.3
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 112000000, guid: 89c100ecb25a39a42a33e992e71959be, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 0fe25f4ba53a6f74aa29ca3cf806d3de, type: 2}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &315735835
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 315735836}
+  m_Layer: 0
+  m_Name: House
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &315735836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315735835}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1307640987}
+  - {fileID: 2040387972}
+  - {fileID: 1707588871}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &469597071
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469597072}
+  - component: {fileID: 469597073}
+  m_Layer: 0
+  m_Name: Reflection Probe Cellar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &469597072
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469597071}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4, y: -2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 579715369}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &469597073
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469597071}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 16, y: 3, z: 10.2}
+  m_BoxOffset: {x: -4, y: 0, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 0
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 0
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &579715368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579715369}
+  m_Layer: 0
+  m_Name: Lighting_additional
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &579715369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579715368}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1181358766}
+  - {fileID: 2126573020}
+  - {fileID: 469597072}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &964168411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 964168412}
+  m_Layer: 0
+  m_Name: Scene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &964168412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964168411}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1264391887}
+  - {fileID: 1088659545}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1088659544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1088659545}
+  - component: {fileID: 1088659546}
+  m_Layer: 0
+  m_Name: PrefabList
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1088659545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088659544}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 27.5, y: 2, z: 11}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 964168412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1088659546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088659544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68d64e184f928c24f8ee5cf99950b68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabList:
+  - prefabName: WallOut_3x
+    category: WallOut
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Foundation_3x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong:
+    - WallIn_A_3x
+    spawnAlongPos:
+    - {x: -3, y: 0, z: 0}
+    spawnAlongRot:
+    - {x: 0, y: 180, z: 0}
+  - prefabName: WallOut_1x
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_1x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong:
+    - WallIn_A_1x
+    spawnAlongPos:
+    - {x: -1, y: 0, z: 0}
+    spawnAlongRot:
+    - {x: 0, y: 180, z: 0}
+  - prefabName: WallOut_3x_door
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_3x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallOut_3x_door_windows
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_3x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallOut_3x_doordouble
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_3x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallOut_3x_window_static
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_3x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallOut_3x_window_vinyl
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_3x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallOut_3x_windowdouble_static
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_3x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallOut_3x_windowdouble_vinyl
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_3x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallOut_6x
+    category: WallOut
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - wall_thin
+    - blob_small
+    swapToPrefabButtonName:
+    - wall thin
+    - blob small
+    addAdditional:
+    - Foundation_6x
+    addAdditionalButtonName:
+    - Foundation
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallOut_corner
+    category: WallOut
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: -0.5, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_3x
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_3x
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_1x
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_1x
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_3x_door
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_3x_door
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Doorframe_in_single
+    - Door_parent_A_L
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: -1.5, y: 0, z: 0}
+    - {x: -1.5, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_3x_doordouble
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_3x_doordouble
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Doorframe_in_double
+    - Door_parent_A_double
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: -1.5, y: 0, z: 0}
+    - {x: -1.5, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_3x_recessed
+    category: WallIn_A
+    variations:
+    - wall_thick_grey
+    - wall_thick_black
+    swapToPrefab:
+    - WallIn_B_3x_recessed
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_3x_window
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_3x_window
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_3x_windowdouble
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_3x_windowdouble
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_6x
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_6x
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_columnhalf_large
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_columnhalf_large
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_columnhalf_small
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_columnhalf_small
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_corner_outLarge
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_corner_outLarge
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_corner_outPatch
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_corner_outPatch
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_A_corner_outSmall
+    category: WallIn_A
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_B_corner_outSmall
+    swapToPrefabButtonName:
+    - WallIn_B
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_3x
+    category: WallIn_B
+    variations:
+    - blob_big_grey
+    - blob_big_black
+    swapToPrefab:
+    - WallIn_A_3x
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_1x
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_1x
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_3x_door
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_3x_door
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Doorframe_in_single
+    - Door_parent_A_L
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: -1.5, y: 0, z: 0}
+    - {x: -1.5, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_3x_doordouble
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_3x_doordouble
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Doorframe_in_double
+    - Door_parent_A_double
+    addAdditionalButtonName:
+    - Doorframe_in_double
+    - Door_parent_A_double
+    addAdditionalPos:
+    - {x: -1.5, y: 0, z: 0}
+    - {x: -1.5, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_3x_window
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_3x_window
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_3x_windowdouble
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_3x_windowdouble
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_3x_recessed
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_3x_recessed
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_6x
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_6x
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_columnhalf_large
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_columnhalf_large
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_columnhalf_small
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_columnhalf_small
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_corner_outLarge
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_corner_outLarge
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_corner_outPatch
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_corner_outPatch
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: WallIn_B_corner_outSmall
+    category: WallIn_B
+    variations:
+    - blob_small_grey
+    - blob_small_black
+    swapToPrefab:
+    - WallIn_A_corner_outSmall
+    swapToPrefabButtonName:
+    - WallIn_A
+    addAdditional:
+    - Wall hole
+    - Wall hole
+    addAdditionalButtonName:
+    - Wall with hole
+    - Wall with hole rotated
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 45, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_6x
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_9x
+    - Roof_A_12x
+    - Roof_A_6x_gable
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_6x_corner
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_9x_corner
+    - Roof_A_12x_corner
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_6x_corner_T
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_9x_corner_T
+    - Roof_A_12x_corner_T
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_6x_gable
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_9x_gable
+    - Roof_A_12x_gable
+    - Roof_A_6x
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    addAdditionalButtonName:
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    - Gutter_pipe_1story_Opposite
+    - Gutter_pipe_2story_Opposite
+    - Gutter_pipe_abovePorch_Opposite
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.5, y: 0, z: -6}
+    - {x: -0.5, y: 0, z: -6}
+    - {x: -0.5, y: 0, z: -6}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 180, z: 0}
+    - {x: 0, y: 180, z: 0}
+    - {x: 0, y: 180, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_9x_corner
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_6x_corner
+    - Roof_A_12x_corner
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_9x_corner_T
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_6x_corner_T
+    - Roof_A_12x_corner_T
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_9x_gable
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_6x_gable
+    - Roof_A_12x_gable
+    - Roof_A_9x
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    addAdditionalButtonName:
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    - Gutter_pipe_1story_Opposite
+    - Gutter_pipe_2story_Opposite
+    - Gutter_pipe_abovePorch_Opposite
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.5, y: 0, z: -9}
+    - {x: -0.5, y: 0, z: -9}
+    - {x: -0.5, y: 0, z: -9}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 180, z: 0}
+    - {x: 0, y: 180, z: 0}
+    - {x: 0, y: 180, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_9x
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_6x
+    - Roof_A_12x
+    - Roof_A_9x_gable
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_12x
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_6x
+    - Roof_A_9x
+    - Roof_A_12x_gable
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_12x_corner
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_6x_corner
+    - Roof_A_9x_corner
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_12x_corner_T
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_6x_corner_T
+    - Roof_A_9x_corner_T
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Roof_A_12x_gable
+    category: Roof
+    variations: []
+    swapToPrefab:
+    - Roof_A_6x_gable
+    - Roof_A_9x_gable
+    - Roof_A_12x
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    addAdditionalButtonName:
+    - Gutter_pipe_1story
+    - Gutter_pipe_2story
+    - Gutter_pipe_abovePorch
+    - Gutter_pipe_1story_Opposite
+    - Gutter_pipe_2story_Opposite
+    - Gutter_pipe_abovePorch_Opposite
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.5, y: 0, z: -12}
+    - {x: -0.5, y: 0, z: -12}
+    - {x: -0.5, y: 0, z: -12}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 180, z: 0}
+    - {x: 0, y: 180, z: 0}
+    - {x: 0, y: 180, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Porch_A_3x
+    category: Porch_A
+    variations:
+    - Porch_A_3x_broken_A
+    swapToPrefab:
+    - Porch_B_3x_corner
+    swapToPrefabButtonName:
+    - Porch_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Porch_A_3x_corner
+    category: Porch_A
+    variations: []
+    swapToPrefab:
+    - Porch_B_3x_corner
+    swapToPrefabButtonName:
+    - Porch_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Porch_A_3x_end_entrance_L
+    category: Porch_A
+    variations: []
+    swapToPrefab:
+    - Porch_B_3x_end_entrance_L
+    swapToPrefabButtonName:
+    - Porch_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Porch_A_3x_end_entrance_R
+    category: Porch_A
+    variations: []
+    swapToPrefab:
+    - Porch_B_3x_end_entrance_R
+    swapToPrefabButtonName:
+    - Porch_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Porch_A_3x_end_L
+    category: Porch_A
+    variations: []
+    swapToPrefab:
+    - Porch_B_3x_end_L
+    swapToPrefabButtonName:
+    - Porch_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Porch_A_3x_end_R
+    category: Porch_A
+    variations: []
+    swapToPrefab:
+    - Porch_B_3x_end_R
+    swapToPrefabButtonName:
+    - Porch_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Porch_A_3x_entrance
+    category: Porch_A
+    variations: []
+    swapToPrefab:
+    - Porch_B_3x_entrance
+    swapToPrefabButtonName:
+    - Porch_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Porch_A_6x_entrance_separate
+    category: Porch_A
+    variations: []
+    swapToPrefab:
+    - Porch_B_6x_entrance_separate
+    swapToPrefabButtonName:
+    - Porch_B
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Foundation_1x
+    category: Foundation
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Foundation_3x
+    category: Foundation
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Foundation_6x
+    category: Foundation
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Floor_1x3
+    category: Floor
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Ceiling_1x3
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 3, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Floor_3x3
+    category: Floor
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Ceiling_3x3
+    addAdditionalButtonName: []
+    addAdditionalPos:
+    - {x: 0, y: 3, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Floor_6x3_stairs_L
+    category: Floor
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Floor_6x3_stairs_R
+    category: Floor
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Ceiling_1x3
+    category: Ceiling
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Ceiling_3x3
+    category: Ceiling
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Ceiling_3x_trim
+    category: Ceiling
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Ceiling_6x3_stairs_L
+    category: Ceiling
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Ceiling_6x3_stairs_R
+    category: Ceiling
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Stairs_main_L
+    category: Stairs
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Floor_6x3_stairs_L
+    - Ceiling_6x3_stairs_L
+    addAdditionalButtonName:
+    - Floor
+    - Ceiling
+    addAdditionalPos:
+    - {x: 0, y: 3, z: 0}
+    - {x: 0, y: 3, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Stairs_main_R
+    category: Stairs
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Floor_6x3_stairs_R
+    - Ceiling_6x3_stairs_R
+    addAdditionalButtonName:
+    - Floor
+    - Ceiling
+    addAdditionalPos:
+    - {x: 0, y: 3, z: 0}
+    - {x: 0, y: 3, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Stairs_straight_L
+    category: Stairs
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Floor_6x3_stairs_L
+    - Ceiling_6x3_stairs_L
+    addAdditionalButtonName:
+    - Floor
+    - Ceiling
+    addAdditionalPos:
+    - {x: 0, y: 3, z: 0}
+    - {x: 0, y: 3, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Stairs_straight_R
+    category: Stairs
+    variations: []
+    swapToPrefab: []
+    swapToPrefabButtonName: []
+    addAdditional:
+    - Floor_6x3_stairs_R
+    - Ceiling_6x3_stairs_R
+    addAdditionalButtonName:
+    - Floor
+    - Ceiling
+    addAdditionalPos:
+    - {x: 0, y: 3, z: 0}
+    - {x: 0, y: 3, z: 0}
+    addAdditionalRot:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_A_double
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_B_double
+    - Door_parent_C_double
+    swapToPrefabButtonName:
+    - DoorB double
+    - DoorC double
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_B_double
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_A_double
+    - Door_parent_C_double
+    swapToPrefabButtonName:
+    - DoorA double
+    - DoorC double
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_C_double
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_A_double
+    - Door_parent_B_double
+    swapToPrefabButtonName:
+    - DoorA double
+    - DoorB double
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_A_L
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_A_R
+    - Door_parent_B_L
+    - Door_parent_B_R
+    - Door_parent_C_L
+    - Door_parent_C_R
+    swapToPrefabButtonName:
+    - DoorA Right
+    - DoorB Left
+    - DoorB Right
+    - DoorC Left
+    - DoorC Right
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_A_R
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_A_L
+    - Door_parent_B_L
+    - Door_parent_B_R
+    - Door_parent_C_L
+    - Door_parent_C_R
+    swapToPrefabButtonName:
+    - DoorA Left
+    - DoorB Left
+    - DoorB Right
+    - DoorC Left
+    - DoorC Right
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_B_L
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_A_L
+    - Door_parent_A_R
+    - Door_parent_B_R
+    - Door_parent_C_L
+    - Door_parent_C_R
+    swapToPrefabButtonName:
+    - DoorA Left
+    - DoorA Right
+    - DoorB Right
+    - DoorC Left
+    - DoorC Right
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_B_R
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_A_L
+    - Door_parent_A_R
+    - Door_parent_B_L
+    - Door_parent_C_L
+    - Door_parent_C_R
+    swapToPrefabButtonName:
+    - DoorA Left
+    - DoorA Right
+    - DoorB Left
+    - DoorC Left
+    - DoorC Right
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_C_L
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_A_L
+    - Door_parent_A_R
+    - Door_parent_B_L
+    - Door_parent_B_R
+    - Door_parent_C_R
+    swapToPrefabButtonName:
+    - DoorA Left
+    - DoorA Right
+    - DoorB Left
+    - DoorB Right
+    - DoorC Right
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+  - prefabName: Door_parent_C_R
+    category: Doors
+    variations: []
+    swapToPrefab:
+    - Door_parent_A_L
+    - Door_parent_A_R
+    - Door_parent_B_L
+    - Door_parent_B_R
+    - Door_parent_C_L
+    swapToPrefabButtonName:
+    - DoorA Left
+    - DoorA Right
+    - DoorB Left
+    - DoorB Right
+    - DoorC Left
+    addAdditional: []
+    addAdditionalButtonName: []
+    addAdditionalPos: []
+    addAdditionalRot: []
+    spawnAlong: []
+    spawnAlongPos: []
+    spawnAlongRot: []
+--- !u!1 &1181358765
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1181358766}
+  - component: {fileID: 1181358767}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1181358766
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181358765}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 579715369}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!220 &1181358767
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181358765}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 0.051817417, y: 2.5430748, z: -2.3671846}
+  - {x: 0.051817417, y: 0.53213954, z: -2.3671846}
+  - {x: -11.187161, y: 2.5430748, z: 5.2491226}
+  - {x: -11.187161, y: 0.53213954, z: 5.2491226}
+  - {x: -0.088671565, y: 2.5430748, z: 2.5434554}
+  - {x: -0.088671565, y: 0.53213954, z: 2.5434554}
+  - {x: 4.238329, y: 2.5430748, z: 3.359366}
+  - {x: 4.238329, y: 0.53213954, z: 3.359366}
+  - {x: 6.5309515, y: 1.5116894, z: 3.359366}
+  - {x: 6.5309515, y: 0.53213954, z: 3.359366}
+  - {x: 9.740395, y: 1.5116894, z: 0.34750664}
+  - {x: 9.740395, y: 0.53213954, z: 0.34750664}
+  - {x: 9.049205, y: 1.5116894, z: 2.5836666}
+  - {x: 9.049205, y: 0.53213954, z: 2.5836666}
+  - {x: 5.7076454, y: 2.540683, z: 1.0719366}
+  - {x: 5.7076454, y: 0.53213954, z: 1.0719366}
+  - {x: 4.0836353, y: 2.540683, z: 0.4317261}
+  - {x: 9.276128, y: 2.540683, z: -6.1978703}
+  - {x: 9.276128, y: 0.53213954, z: -6.1978703}
+  - {x: 7.396572, y: 2.540683, z: -5.8714437}
+  - {x: 7.396572, y: 0.53213954, z: -5.8714437}
+  - {x: 3.7821555, y: 2.5430748, z: -2.9346175}
+  - {x: 3.7821555, y: 0.53213954, z: -2.9346175}
+  - {x: 1.6984689, y: 2.5430748, z: -2.9346175}
+  - {x: 1.6984689, y: 0.53213954, z: -2.9346175}
+  - {x: -0.4847957, y: 0.53213954, z: -7.20015}
+  - {x: -0.4847957, y: 2.5430748, z: -7.20015}
+  - {x: -3.5563323, y: 0.53213954, z: -3.7530403}
+  - {x: -3.5563323, y: 2.5430748, z: -3.7530403}
+  - {x: -2.8009343, y: 0.53213954, z: -5.262292}
+  - {x: -2.8009343, y: 2.5430748, z: -5.262292}
+  - {x: -0.2898792, y: 0.53213954, z: -5.984558}
+  - {x: -0.2898792, y: 2.5430748, z: -5.984558}
+  - {x: 3.1744509, y: 0.53213954, z: -5.12896}
+  - {x: 3.1744509, y: 2.5430748, z: -5.12896}
+  - {x: 3.5375178, y: 0.53213954, z: -5.984558}
+  - {x: 3.5375178, y: 2.5430748, z: -5.984558}
+  - {x: 1.991689, y: 0.53213954, z: -7.9730463}
+  - {x: 1.991689, y: 2.5430748, z: -7.9730463}
+  - {x: -0.60108733, y: 0.53213954, z: 3.5093122}
+  - {x: -0.60108733, y: 2.5430748, z: 3.5093122}
+  - {x: 0.60138905, y: -2.6766171, z: -1.8120446}
+  - {x: -3.508304, y: 2.5430748, z: 3.4931958}
+  - {x: -5.0663724, y: 0.53213954, z: 3.359366}
+  - {x: -5.0663724, y: 2.5430748, z: 3.359366}
+  - {x: -5.4926457, y: 0.53213954, z: 1.8088608}
+  - {x: -5.4926457, y: 2.5430748, z: 1.8088608}
+  - {x: -4.3963413, y: 0.53213954, z: -5.987662}
+  - {x: -4.3963413, y: 2.5430748, z: -5.987662}
+  - {x: -10.451076, y: 0.53213954, z: -2.7125092}
+  - {x: -10.451076, y: 2.5430748, z: -2.7125092}
+  - {x: -10.332116, y: 0.53213954, z: -1.9579365}
+  - {x: -10.332116, y: 2.5430748, z: -1.9579365}
+  - {x: -8.72973, y: 0.53213954, z: 1.5165136}
+  - {x: -11.5526285, y: 2.5430748, z: -1.9324769}
+  - {x: -10.862345, y: 0.53213954, z: 5.6133914}
+  - {x: -10.862345, y: 2.5430748, z: 5.6133914}
+  - {x: -10.5097885, y: 0.53213954, z: 6.464722}
+  - {x: -10.5097885, y: 2.5430748, z: 6.464722}
+  - {x: 2.3064482, y: 0.53213954, z: 3.359366}
+  - {x: 2.3064482, y: 2.5430748, z: 3.359366}
+  - {x: 3.1166098, y: 3.287782, z: 3.225058}
+  - {x: 3.1166098, y: 5.5560765, z: 3.225058}
+  - {x: -0.6996906, y: 5.5560765, z: 3.781713}
+  - {x: 0.070773125, y: 3.287782, z: 1.9889677}
+  - {x: 0.070773125, y: 5.5560765, z: 1.9889677}
+  - {x: -2.974966, y: 3.287782, z: 4.103076}
+  - {x: -2.974966, y: 5.5560765, z: 4.103076}
+  - {x: -5.9743977, y: 3.287782, z: 2.1595278}
+  - {x: -5.9743977, y: 5.5560765, z: 2.1595278}
+  - {x: -8.718793, y: 3.287782, z: 3.4730754}
+  - {x: -8.718793, y: 5.5560765, z: 3.4730754}
+  - {x: -8.664523, y: 3.287782, z: 6.480508}
+  - {x: -8.664523, y: 5.5560765, z: 6.480508}
+  - {x: -11.945795, y: 3.287782, z: 5.3976846}
+  - {x: -11.945795, y: 5.5560765, z: 5.3976846}
+  - {x: -9.335544, y: 3.287782, z: 5.384794}
+  - {x: -9.335544, y: 5.5560765, z: 5.384794}
+  - {x: -9.430681, y: 3.287782, z: 0.1607078}
+  - {x: -9.430681, y: 5.5560765, z: 0.1607078}
+  - {x: -9.093814, y: 3.287782, z: 1.3876259}
+  - {x: -9.093814, y: 5.5560765, z: 1.3876259}
+  - {x: -12.782738, y: 3.287782, z: -2.361686}
+  - {x: -12.782738, y: 5.5560765, z: -2.361686}
+  - {x: -11.879426, y: 3.287782, z: 0.052175283}
+  - {x: -11.879426, y: 5.5560765, z: 0.052175283}
+  - {x: -5.360767, y: 3.287782, z: -3.1629674}
+  - {x: -5.360767, y: 5.5560765, z: -3.1629674}
+  - {x: -5.362417, y: 3.287782, z: -5.194379}
+  - {x: -5.362417, y: 5.5560765, z: -5.194379}
+  - {x: -2.920868, y: 3.287782, z: 0.23499233}
+  - {x: -2.920868, y: 5.5560765, z: 0.23499233}
+  - {x: -1.7060452, y: 3.287782, z: -3.0301914}
+  - {x: -1.7060452, y: 5.5560765, z: -3.0301914}
+  - {x: 0.011245847, y: 3.287782, z: -2.900577}
+  - {x: 0.011245847, y: 5.5560765, z: -2.900577}
+  - {x: -0.6619662, y: 3.287782, z: -5.9019165}
+  - {x: -0.6619662, y: 5.5560765, z: -5.9019165}
+  - {x: 5.09198, y: 3.287782, z: -5.528947}
+  - {x: 5.09198, y: 5.5560765, z: -5.528947}
+  - {x: 6.441508, y: 3.287782, z: -5.8836927}
+  - {x: 6.441508, y: 5.5867105, z: -5.8836927}
+  - {x: 9.473427, y: 3.287782, z: -6.1933246}
+  - {x: 9.473427, y: 5.5867105, z: -6.1933246}
+  - {x: 9.116352, y: 3.287782, z: -4.624705}
+  - {x: 9.116352, y: 5.5867105, z: -4.624705}
+  - {x: 6.473594, y: 3.287782, z: -2.9013155}
+  - {x: 6.473594, y: 5.5867105, z: -2.9013155}
+  - {x: 1.3937293, y: 3.287782, z: -3.2687905}
+  - {x: 1.3937293, y: 5.5560765, z: -3.2687905}
+  - {x: 3.6677318, y: 3.287782, z: -2.5432763}
+  - {x: 3.6677318, y: 5.5560765, z: -2.5432763}
+  - {x: 9.122546, y: 3.287782, z: 3.9932308}
+  - {x: 9.122546, y: 5.5560765, z: 3.9932308}
+  - {x: 0.051817417, y: 0.53213954, z: -2.9346175}
+  - {x: 0.051817417, y: 2.5430748, z: -2.9346175}
+  - {x: -6.173774, y: 3.287782, z: 0.24754202}
+  - {x: -6.173774, y: 5.5560765, z: 0.24754202}
+  - {x: -5.4926457, y: 0.53213954, z: -0.7787049}
+  - {x: -5.4926457, y: 2.5430748, z: -0.7787049}
+  - {x: -6.8705344, y: 0.53213954, z: -1.4709897}
+  - {x: -6.8705344, y: 2.5430748, z: -1.4709897}
+  - {x: -5.2584314, y: 0.53213954, z: -4.311202}
+  - {x: -5.2584314, y: 2.5430748, z: -4.311202}
+  - {x: -7.4823995, y: 0.53213954, z: 3.3324828}
+  - {x: -7.4823995, y: 2.5430748, z: 3.3324828}
+  - {x: -11.5526285, y: 0.53213954, z: 1.8030776}
+  - {x: -11.5526285, y: 2.5430748, z: 1.8030776}
+  - {x: -6.1771, y: 3.287782, z: -1.8379316}
+  - {x: -6.1771, y: 5.5560765, z: -1.8379316}
+  - {x: 3.6677318, y: 3.287782, z: 0.5014427}
+  - {x: 3.6677318, y: 5.5560765, z: 0.5014427}
+  - {x: 5.907612, y: 3.287782, z: 0.697778}
+  - {x: 5.907612, y: 5.5560765, z: 0.697778}
+  - {x: 5.907158, y: 3.287782, z: 3.441981}
+  - {x: 5.907158, y: 5.5560765, z: 3.441981}
+  - {x: 7.376642, y: 3.287782, z: 2.6007476}
+  - {x: 7.376642, y: 5.5560765, z: 2.6007476}
+  - {x: 7.579396, y: 3.287782, z: -0.165573}
+  - {x: 7.579396, y: 5.5560765, z: -0.165573}
+  - {x: 9.375568, y: 3.287782, z: 1.8454783}
+  - {x: 9.375568, y: 5.5560765, z: 1.8454783}
+  - {x: 9.079974, y: 3.287782, z: -0.11139047}
+  - {x: 9.079974, y: 5.5560765, z: -0.11139047}
+  - {x: 8.126109, y: 3.287782, z: -3.6226053}
+  - {x: 8.126109, y: 5.5867105, z: -3.6226053}
+  - {x: 0.06841633, y: 3.287782, z: -0.5744977}
+  - {x: 0.06841633, y: 5.5560765, z: -0.5744977}
+  - {x: 8.075714, y: 0.53213954, z: 2.5602975}
+  - {x: 8.075714, y: 1.5116894, z: 2.5602975}
+  - {x: 9.681287, y: 0.53213954, z: 3.857011}
+  - {x: 9.681287, y: 1.5116894, z: 3.857011}
+  - {x: -8.765593, y: 0.53213954, z: 0.40077925}
+  - {x: -8.765593, y: 2.5430748, z: 0.40077925}
+  - {x: -9.895301, y: 0.53213954, z: 2.8833091}
+  - {x: -9.895301, y: 2.5430748, z: 2.8833091}
+  - {x: -9.25832, y: 0.53213954, z: 2.1369216}
+  - {x: -9.25832, y: 2.5430748, z: 2.1369216}
+  - {x: 3.1166098, y: 4.3191395, z: 3.225058}
+  - {x: -0.047888756, y: 3.7976158, z: 4.4448047}
+  - {x: 0.070773125, y: 4.3191395, z: 1.9889677}
+  - {x: -2.974966, y: 4.3191395, z: 4.103076}
+  - {x: -5.9743977, y: 4.3191395, z: 2.1595278}
+  - {x: -8.718793, y: 4.3191395, z: 3.4730754}
+  - {x: -8.664523, y: 4.3191395, z: 6.480508}
+  - {x: -11.945795, y: 4.3191395, z: 5.3976846}
+  - {x: -9.335544, y: 4.3191395, z: 5.384794}
+  - {x: -9.430681, y: 4.3191395, z: 0.1607078}
+  - {x: -9.093814, y: 4.3191395, z: 1.3876259}
+  - {x: -12.782738, y: 4.3191395, z: -2.361686}
+  - {x: -11.879426, y: 4.3191395, z: 0.052175283}
+  - {x: -5.360767, y: 4.3191395, z: -3.1629674}
+  - {x: -5.362417, y: 4.3191395, z: -5.194379}
+  - {x: -2.920868, y: 4.3191395, z: 0.23499233}
+  - {x: -1.7060452, y: 4.3191395, z: -3.0301914}
+  - {x: 0.011245847, y: 4.3191395, z: -2.900577}
+  - {x: -0.6619662, y: 4.3191395, z: -5.9019165}
+  - {x: 5.09198, y: 4.3191395, z: -5.528947}
+  - {x: 6.441508, y: 4.3497734, z: -5.8836927}
+  - {x: 9.473427, y: 4.3497734, z: -6.1933246}
+  - {x: 9.116352, y: 4.3497734, z: -4.624705}
+  - {x: 6.473594, y: 4.3497734, z: -2.9013155}
+  - {x: 1.3937293, y: 4.3191395, z: -3.2687905}
+  - {x: 3.6677318, y: 4.3191395, z: -2.5432763}
+  - {x: 9.122546, y: 4.3191395, z: 3.9932308}
+  - {x: -6.173774, y: 4.3191395, z: 0.24754202}
+  - {x: -6.1771, y: 4.3191395, z: -1.8379316}
+  - {x: 3.6677318, y: 4.3191395, z: 0.5014427}
+  - {x: 5.907612, y: 4.3191395, z: 0.697778}
+  - {x: 5.907158, y: 4.3191395, z: 3.441981}
+  - {x: 7.376642, y: 4.3191395, z: 2.6007476}
+  - {x: 7.579396, y: 4.3191395, z: -0.165573}
+  - {x: 9.375568, y: 4.3191395, z: 1.8454783}
+  - {x: 9.079974, y: 4.3191395, z: -0.11139047}
+  - {x: 8.126109, y: 4.3497734, z: -3.6226053}
+  - {x: 0.06841633, y: 4.3191395, z: -0.5744977}
+  - {x: 0.051817417, y: 1.604666, z: -2.3671846}
+  - {x: -11.187161, y: 1.604666, z: 5.2491226}
+  - {x: -0.088671565, y: 1.604666, z: 2.5434554}
+  - {x: 4.238329, y: 1.604666, z: 3.359366}
+  - {x: 5.7076454, y: 1.6022742, z: 1.0719366}
+  - {x: 9.276128, y: 1.6022742, z: -6.1978703}
+  - {x: 7.396572, y: 1.6022742, z: -5.8714437}
+  - {x: 3.7821555, y: 1.604666, z: -2.9346175}
+  - {x: 1.6984689, y: 1.604666, z: -2.9346175}
+  - {x: -0.4847957, y: 1.604666, z: -7.20015}
+  - {x: -3.5563323, y: 1.604666, z: -3.7530403}
+  - {x: -2.8009343, y: 1.604666, z: -5.262292}
+  - {x: -0.2898792, y: 1.604666, z: -5.984558}
+  - {x: 3.1744509, y: 1.604666, z: -5.12896}
+  - {x: 3.5375178, y: 1.604666, z: -5.984558}
+  - {x: 1.991689, y: 1.604666, z: -7.9730463}
+  - {x: -0.60108733, y: 1.604666, z: 3.5093122}
+  - {x: 0.60138905, y: -1.6040907, z: -1.8120446}
+  - {x: -5.0663724, y: 1.604666, z: 3.359366}
+  - {x: -5.4926457, y: 1.604666, z: 1.8088608}
+  - {x: -4.3963413, y: 1.604666, z: -5.987662}
+  - {x: -10.451076, y: 1.604666, z: -2.7125092}
+  - {x: -10.332116, y: 1.604666, z: -1.9579365}
+  - {x: -8.72973, y: 1.604666, z: 1.5165136}
+  - {x: -10.862345, y: 1.604666, z: 5.6133914}
+  - {x: -10.5097885, y: 1.604666, z: 6.464722}
+  - {x: 2.3064482, y: 1.604666, z: 3.359366}
+  - {x: 0.051817417, y: 1.604666, z: -2.9346175}
+  - {x: -5.4926457, y: 1.604666, z: -0.7787049}
+  - {x: -6.8705344, y: 1.604666, z: -1.4709897}
+  - {x: -5.2584314, y: 1.604666, z: -4.311202}
+  - {x: -7.4823995, y: 1.604666, z: 3.3324828}
+  - {x: -11.5526285, y: 1.604666, z: 1.8030776}
+  - {x: -8.765593, y: 1.604666, z: 0.40077925}
+  - {x: -9.895301, y: 1.604666, z: 2.8833091}
+  - {x: -9.25832, y: 1.604666, z: 2.1369216}
+  - {x: 2.4932806, y: 5.5560765, z: -6.0052876}
+  - {x: 2.4932806, y: 4.3191395, z: -6.0052876}
+  - {x: 2.4932806, y: 3.287782, z: -6.0052876}
+  - {x: 2.4932806, y: 5.5560765, z: -5.1165714}
+  - {x: 2.4932806, y: 4.3191395, z: -5.1165714}
+  - {x: 2.4932806, y: 3.287782, z: -5.1165714}
+  - {x: 3.8650115, y: 5.5560765, z: -5.528947}
+  - {x: 3.8650115, y: 4.3191395, z: -5.528947}
+  - {x: 3.8650115, y: 3.287782, z: -5.528947}
+  - {x: 9.205439, y: 3.287782, z: -2.63625}
+  - {x: 9.205439, y: 4.3497734, z: -2.63625}
+  - {x: 9.205439, y: 5.5867105, z: -2.63625}
+  - {x: 8.176294, y: 3.287782, z: -2.243572}
+  - {x: 8.176294, y: 4.3497734, z: -2.243572}
+  - {x: 8.176294, y: 5.5867105, z: -2.243572}
+  - {x: 5.8502464, y: 3.287782, z: 2.1598833}
+  - {x: 5.8502464, y: 4.3191395, z: 2.1598833}
+  - {x: 5.8502464, y: 5.5560765, z: 2.1598833}
+  - {x: 7.373699, y: 3.287782, z: 3.734731}
+  - {x: 7.373699, y: 4.3191395, z: 3.734731}
+  - {x: 7.373699, y: 5.5560765, z: 3.734731}
+  - {x: 7.579396, y: 4.3191395, z: 0.9260402}
+  - {x: 7.579396, y: 3.287782, z: 0.9260402}
+  - {x: 7.579396, y: 5.5560765, z: 0.9260402}
+  - {x: -0.06504583, y: 3.287782, z: 0.31230438}
+  - {x: -0.06504583, y: 4.3191395, z: 0.31230438}
+  - {x: -0.06504583, y: 5.5560765, z: 0.31230438}
+  - {x: -2.021141, y: 5.5560765, z: -0.40014976}
+  - {x: -8.629309, y: 3.287782, z: -2.361686}
+  - {x: -8.629309, y: 4.3191395, z: -2.361686}
+  - {x: -8.629309, y: 5.5560765, z: -2.361686}
+  - {x: -10.176021, y: 3.287782, z: -2.361686}
+  - {x: -10.176021, y: 4.3191395, z: -2.361686}
+  - {x: -10.176021, y: 5.5560765, z: -2.361686}
+  - {x: -12.56948, y: 3.287782, z: -1.2865423}
+  - {x: -12.56948, y: 4.3191395, z: -1.2865423}
+  - {x: -12.56948, y: 5.5560765, z: -1.2865423}
+  - {x: -11.284007, y: 3.287782, z: -0.9269504}
+  - {x: -11.284007, y: 4.3191395, z: -0.9269504}
+  - {x: -11.284007, y: 5.5560765, z: -0.9269504}
+  - {x: -11.335803, y: 3.287782, z: 0.82628006}
+  - {x: -11.335803, y: 4.3191395, z: 0.82628006}
+  - {x: -11.335803, y: 5.5560765, z: 0.82628006}
+  - {x: -12.317466, y: 3.287782, z: 2.9433591}
+  - {x: -12.317466, y: 4.3191395, z: 2.9433591}
+  - {x: -12.317466, y: 5.5560765, z: 2.9433591}
+  - {x: -11.478659, y: 3.287782, z: 3.9304984}
+  - {x: -11.478659, y: 4.3191395, z: 3.9304984}
+  - {x: -11.478659, y: 5.5560765, z: 3.9304984}
+  - {x: -12.144031, y: 3.287782, z: 6.377922}
+  - {x: -12.144031, y: 4.3191395, z: 6.377922}
+  - {x: -12.144031, y: 5.5560765, z: 6.377922}
+  - {x: -2.2802079, y: 3.287782, z: -5.977639}
+  - {x: -2.2802079, y: 4.3191395, z: -5.977639}
+  - {x: -2.2802079, y: 5.5560765, z: -5.977639}
+  - {x: -3.733364, y: 3.287782, z: -5.977639}
+  - {x: -3.733364, y: 4.3191395, z: -5.977639}
+  - {x: -3.733364, y: 5.5560765, z: -5.977639}
+  - {x: -3.733364, y: 3.287782, z: -4.919101}
+  - {x: -3.733364, y: 4.3191395, z: -4.919101}
+  - {x: -3.733364, y: 5.5560765, z: -4.919101}
+  - {x: -2.2438354, y: 3.287782, z: -4.919101}
+  - {x: -2.2438354, y: 4.3191395, z: -4.919101}
+  - {x: -2.2438354, y: 5.5560765, z: -4.919101}
+  - {x: -0.8752111, y: 3.287782, z: -4.6135726}
+  - {x: -0.8752111, y: 4.3191395, z: -4.6135726}
+  - {x: -0.8752111, y: 5.5560765, z: -4.6135726}
+  - {x: 0.61210275, y: 3.287782, z: -4.8506284}
+  - {x: 0.61210275, y: 4.3191395, z: -4.8506284}
+  - {x: 0.61210275, y: 5.5560765, z: -4.8506284}
+  - {x: 0.1579318, y: 3.287782, z: -5.8579516}
+  - {x: 0.1579318, y: 4.3191395, z: -5.8579516}
+  - {x: 0.1579318, y: 5.5560765, z: -5.8579516}
+  - {x: -3.2251735, y: 3.287782, z: -0.96375436}
+  - {x: -3.2251735, y: 4.3191395, z: -0.96375436}
+  - {x: -3.2251735, y: 5.5560765, z: -0.96375436}
+  - {x: -3.1455636, y: 3.287782, z: -2.9132566}
+  - {x: -3.1455636, y: 4.3191395, z: -2.9132566}
+  - {x: -3.1455636, y: 5.5560765, z: -2.9132566}
+  - {x: 2.016149, y: 0.53213954, z: -5.984558}
+  - {x: 1.4865413, y: 1.1784558, z: -6.906424}
+  - {x: 2.016149, y: 2.5430748, z: -5.984558}
+  - {x: 2.016149, y: 0.53213954, z: -5.12896}
+  - {x: 2.016149, y: 1.604666, z: -5.12896}
+  - {x: 2.016149, y: 2.5430748, z: -5.12896}
+  - {x: 0.99067795, y: 0.53213954, z: -5.12896}
+  - {x: 0.99067795, y: 1.604666, z: -5.12896}
+  - {x: 0.99067795, y: 2.5430748, z: -5.12896}
+  - {x: 3.1088166, y: 0.53213954, z: -7.38091}
+  - {x: 3.1088166, y: 1.604666, z: -7.38091}
+  - {x: 3.1088166, y: 2.5430748, z: -7.38091}
+  - {x: 3.1088166, y: 0.53213954, z: -8.609569}
+  - {x: 3.1088166, y: 1.604666, z: -8.609569}
+  - {x: 3.1088166, y: 2.5430748, z: -8.609569}
+  - {x: 2.519739, y: 0.53213954, z: -8.912662}
+  - {x: 2.519739, y: 1.604666, z: -8.912662}
+  - {x: 2.519739, y: 2.5430748, z: -8.912662}
+  - {x: 1.517137, y: 0.53213954, z: -8.912662}
+  - {x: 1.517137, y: 1.604666, z: -8.912662}
+  - {x: 1.517137, y: 2.5430748, z: -8.912662}
+  - {x: 0.5111176, y: 0.53213954, z: -8.912662}
+  - {x: 0.5111176, y: 1.604666, z: -8.912662}
+  - {x: 0.5111176, y: 2.5430748, z: -8.912662}
+  - {x: 1.1165574, y: 0.53213954, z: -8.363639}
+  - {x: 1.1165574, y: 1.604666, z: -8.363639}
+  - {x: 1.1165574, y: 2.5430748, z: -8.363639}
+  - {x: 0.32694983, y: 0.53213954, z: -8.133333}
+  - {x: 0.32694983, y: 1.604666, z: -8.133333}
+  - {x: 0.32694983, y: 2.5430748, z: -8.133333}
+  - {x: -0.6158519, y: 0.53213954, z: -8.653306}
+  - {x: -0.6158519, y: 1.604666, z: -8.653306}
+  - {x: -0.6158519, y: 2.5430748, z: -8.653306}
+  - {x: -8.767145, y: 0.53213954, z: -2.0104458}
+  - {x: -8.767145, y: 1.604666, z: -2.0104458}
+  - {x: -8.767145, y: 2.5430748, z: -2.0104458}
+  - {x: -8.767145, y: 0.53213954, z: -3.0115027}
+  - {x: -8.767145, y: 1.604666, z: -3.0115027}
+  - {x: -8.767145, y: 2.5430748, z: -3.0115027}
+  - {x: -11.9903555, y: 0.53213954, z: -3.0115027}
+  - {x: -11.9903555, y: 1.604666, z: -3.0115027}
+  - {x: -11.9903555, y: 2.5430748, z: -3.0115027}
+  - {x: -11.880539, y: 0.53213954, z: -1.9324769}
+  - {x: -11.880539, y: 1.604666, z: -1.9324769}
+  - {x: -12.491665, y: 0.53213954, z: -0.46754444}
+  - {x: -12.491665, y: 1.604666, z: -0.46754444}
+  - {x: -12.491665, y: 0.53213954, z: 1.1951476}
+  - {x: -12.491665, y: 1.604666, z: 1.1951476}
+  - {x: -10.442614, y: 0.53213954, z: 1.5662144}
+  - {x: -10.442614, y: 1.604666, z: 1.5662144}
+  - {x: -8.386084, y: 0.53213954, z: 6.305445}
+  - {x: -8.386084, y: 1.604666, z: 6.305445}
+  - {x: -8.386084, y: 2.5430748, z: 6.305445}
+  - {x: -9.143471, y: 0.53213954, z: 7.015946}
+  - {x: -9.143471, y: 1.604666, z: 7.015946}
+  - {x: -9.143471, y: 2.5430748, z: 7.015946}
+  - {x: -9.400017, y: 0.53213954, z: 6.0517573}
+  - {x: -9.400017, y: 1.604666, z: 6.0517573}
+  - {x: -9.400017, y: 2.5430748, z: 6.0517573}
+  - {x: -11.793299, y: 0.53213954, z: 6.762195}
+  - {x: -11.793299, y: 1.604666, z: 6.762195}
+  - {x: -11.793299, y: 2.5430748, z: 6.762195}
+  - {x: -12.871464, y: 0.53213954, z: 6.762195}
+  - {x: -12.871464, y: 1.604666, z: 6.762195}
+  - {x: -12.871464, y: 2.5430748, z: 6.762195}
+  - {x: -12.547408, y: 0.53213954, z: 5.6133914}
+  - {x: -12.547408, y: 1.604666, z: 5.6133914}
+  - {x: -12.547408, y: 2.5430748, z: 5.6133914}
+  - {x: -2.3245223, y: 0.53213954, z: 3.5093122}
+  - {x: -2.3245223, y: 1.604666, z: 3.5093122}
+  - {x: -2.3245223, y: 2.5430748, z: 3.5093122}
+  - {x: 7.1749735, y: 0.53213954, z: -0.051763654}
+  - {x: 7.1749735, y: 1.5116894, z: -0.051763654}
+  - {x: 9.049205, y: 0.53213954, z: 1.3343985}
+  - {x: 9.049205, y: 1.5116894, z: 1.3343985}
+  - {x: 8.075714, y: 0.53213954, z: 1.0719366}
+  - {x: 8.075714, y: 1.5116894, z: 1.0719366}
+  - {x: 4.0836353, y: 0.53213954, z: 0.4317261}
+  - {x: 4.0836353, y: 1.6022742, z: 0.4317261}
+  - {x: 5.7076454, y: 1.6022742, z: -0.75053155}
+  - {x: 5.7076454, y: 2.540683, z: -0.75053155}
+  - {x: 5.7076454, y: 0.53213954, z: -0.75053155}
+  - {x: 4.0836353, y: 1.6022742, z: -0.98282564}
+  - {x: 4.0836353, y: 2.540683, z: -0.98282564}
+  - {x: 4.0836353, y: 0.53213954, z: -0.98282564}
+  - {x: 7.3867016, y: 0.53213954, z: -3.726899}
+  - {x: 7.3867016, y: 1.5116894, z: -3.726899}
+  - {x: -11.843874, y: 3.287782, z: -2.361686}
+  - {x: -11.843874, y: 4.3191395, z: -2.361686}
+  - {x: -11.843874, y: 5.5560765, z: -2.361686}
+  - {x: -1.8712041, y: 0.53213954, z: -3.1855037}
+  - {x: -1.8712041, y: 1.604666, z: -3.1855037}
+  - {x: -1.8712041, y: 2.5430748, z: -3.1855037}
+  - {x: 0.6142081, y: 0.53213954, z: 3.359366}
+  - {x: 0.6142081, y: 1.604666, z: 3.359366}
+  - {x: 0.6142081, y: 2.5430748, z: 3.359366}
+  - {x: -3.508304, y: 0.53213954, z: 3.4931958}
+  - {x: -3.508304, y: 1.604666, z: 3.4931958}
+  - {x: -5.470459, y: -2.6766171, z: 3.4931958}
+  - {x: -5.470459, y: -1.6040907, z: 3.4931958}
+  - {x: -3.1117525, y: -2.6766171, z: 3.4931958}
+  - {x: -3.1117525, y: -1.6040907, z: 3.4931958}
+  - {x: -1.2828565, y: -2.6766171, z: 3.4931958}
+  - {x: -1.2828565, y: -1.6040907, z: 3.4931958}
+  - {x: 0.9915135, y: -2.6766171, z: 3.4931958}
+  - {x: 0.9915135, y: -1.6040907, z: 3.4931958}
+  - {x: 3.2774825, y: -2.6766171, z: 3.4931958}
+  - {x: 3.2774825, y: -1.6040907, z: 3.4931958}
+  - {x: 5.5289755, y: -2.6766171, z: 3.4931958}
+  - {x: 5.5289755, y: -1.6040907, z: 3.4931958}
+  - {x: 5.5289755, y: -2.6766171, z: 1.6290257}
+  - {x: 5.5289755, y: -1.6040907, z: 1.6290257}
+  - {x: 5.5289755, y: -2.6766171, z: -0.37352657}
+  - {x: 5.5289755, y: -1.6040907, z: -0.37352657}
+  - {x: 2.8362534, y: -2.6766171, z: -0.37352657}
+  - {x: 2.8362534, y: -1.6040907, z: -0.37352657}
+  - {x: 0.626987, y: -2.6766171, z: -0.37352657}
+  - {x: 0.626987, y: -1.6040907, z: -0.37352657}
+  - {x: -0.87774765, y: -2.6766171, z: -0.37352657}
+  - {x: -0.87774765, y: -1.6040907, z: -0.37352657}
+  - {x: -0.3063649, y: -2.6766171, z: 1.6058666}
+  - {x: -0.3063649, y: -1.6040907, z: 1.6058666}
+  - {x: -5.4662795, y: -2.6766171, z: 0.7061379}
+  - {x: -5.4662795, y: -1.6040907, z: 0.7061379}
+  - {x: -2.0935497, y: -2.6766171, z: -2.6860905}
+  - {x: -2.0935497, y: -1.6040907, z: -2.6860905}
+  - {x: -4.2405434, y: -2.6766171, z: -3.2465968}
+  - {x: -4.2405434, y: -1.6040907, z: -3.2465968}
+  - {x: -2.021141, y: 3.287782, z: -0.40014976}
+  - {x: -2.021141, y: 4.3191395, z: -0.40014976}
+  - {x: -3.0680647, y: 3.287782, z: 3.0022898}
+  - {x: -3.0680647, y: 4.3191395, z: 3.0022898}
+  - {x: -3.0680647, y: 5.5560765, z: 3.0022898}
+  - {x: -1.7324008, y: 3.287782, z: 2.9641922}
+  - {x: -1.7324008, y: 4.3191395, z: 2.9641922}
+  - {x: -1.7324008, y: 5.5560765, z: 2.9641922}
+  - {x: -3.8569958, y: 3.287782, z: 0.081733644}
+  - {x: -3.8569958, y: 5.5560765, z: 0.081733644}
+  - {x: -3.8569958, y: 4.3191395, z: 0.081733644}
+  - {x: 2.4188886, y: 3.287782, z: -2.9013155}
+  - {x: 2.4188886, y: 4.3191395, z: -2.9013155}
+  - {x: 2.4188886, y: 5.5560765, z: -2.9013155}
+  - {x: 5.7076454, y: 0.53213954, z: -2.6300206}
+  - {x: 5.7076454, y: 1.6022742, z: -2.6300206}
+  - {x: 5.7076454, y: 2.540683, z: -2.6300206}
+  - {x: 7.948451, y: 0.53213954, z: -2.6300206}
+  - {x: 7.948451, y: 1.6022742, z: -2.6300206}
+  - {x: 7.948451, y: 2.540683, z: -2.6300206}
+  - {x: 9.276128, y: 0.53213954, z: -2.6300206}
+  - {x: 9.276128, y: 1.6022742, z: -2.6300206}
+  - {x: 9.276128, y: 2.540683, z: -2.6300206}
+  - {x: 9.276128, y: 0.53213954, z: -3.8200676}
+  - {x: 9.276128, y: 1.6022742, z: -3.8200676}
+  - {x: 9.276128, y: 2.540683, z: -3.8200676}
+  - {x: 9.276128, y: 0.53213954, z: -5.0533905}
+  - {x: 9.276128, y: 1.6022742, z: -5.0533905}
+  - {x: 9.276128, y: 2.540683, z: -5.0533905}
+  - {x: 5.7076454, y: 0.53213954, z: -4.2665577}
+  - {x: 5.7076454, y: 1.6022742, z: -4.2665577}
+  - {x: 5.7076454, y: 2.540683, z: -4.2665577}
+  - {x: 5.7076454, y: 0.53213954, z: -5.8714437}
+  - {x: 5.7076454, y: 1.6022742, z: -5.8714437}
+  - {x: 5.7076454, y: 2.540683, z: -5.8714437}
+  - {x: -6.9172935, y: 3.287782, z: 3.620135}
+  - {x: -6.9172935, y: 4.3191395, z: 3.620135}
+  - {x: -6.9172935, y: 5.5560765, z: 3.620135}
+  - {x: -5.4126987, y: 3.287782, z: 3.6737535}
+  - {x: -5.4126987, y: 4.3191395, z: 3.6737535}
+  - {x: -5.4126987, y: 5.5560765, z: 3.6737535}
+  - {x: -0.047888756, y: 3.287782, z: 4.4448047}
+  - {x: -0.6996906, y: 3.1960938, z: 3.781713}
+  - {x: -0.6996906, y: 3.7976158, z: 3.781713}
+  - {x: 0.7751918, y: 3.287782, z: 4.4274044}
+  - {x: 0.7751918, y: 4.3191395, z: 4.4274044}
+  - {x: 0.35319555, y: 3.287782, z: 3.359366}
+  - {x: 0.35319555, y: 4.3191395, z: 3.359366}
+  - {x: 0.35319555, y: 5.5560765, z: 3.359366}
+  - {x: -0.19560215, y: 3.1960938, z: 3.781713}
+  - {x: -0.19560215, y: 3.7976158, z: 3.781713}
+  - {x: -0.19560215, y: 5.5560765, z: 3.781713}
+  - {x: -0.53294134, y: 3.287782, z: 4.4448047}
+  - {x: -0.53294134, y: 3.7976158, z: 4.4448047}
+  - {x: -0.6996906, y: 4.847517, z: 3.781713}
+  - {x: -0.53294134, y: 4.847517, z: 4.4448047}
+  - {x: -0.19560215, y: 4.847517, z: 3.781713}
+  - {x: -0.047888756, y: 4.847517, z: 4.4448047}
+  - {x: -0.6996906, y: 4.329713, z: 3.781713}
+  - {x: -0.53294134, y: 4.329713, z: 4.4448047}
+  - {x: -0.19560215, y: 4.329713, z: 3.781713}
+  - {x: -0.047888756, y: 4.329713, z: 4.4448047}
+  - {x: -9.005221, y: 0.53213954, z: 3.9430876}
+  - {x: -9.005221, y: 1.604666, z: 3.9430876}
+  - {x: -9.005221, y: 2.5430748, z: 3.9430876}
+  - {x: -9.265601, y: 0.53213954, z: 4.676173}
+  - {x: -9.265601, y: 1.604666, z: 4.676173}
+  - {x: -9.265601, y: 2.5430748, z: 4.676173}
+  - {x: -9.614808, y: 0.53213954, z: 3.9430876}
+  - {x: -9.614808, y: 1.604666, z: 3.9430876}
+  - {x: -9.614808, y: 2.5430748, z: 3.9430876}
+  - {x: -11.807901, y: 0.53213954, z: 5.985853}
+  - {x: -11.807901, y: 1.604666, z: 5.985853}
+  - {x: -11.807901, y: 2.5430748, z: 5.985853}
+  - {x: -11.804619, y: 0.53213954, z: 5.3988338}
+  - {x: -11.804619, y: 1.604666, z: 5.3988338}
+  - {x: -11.804619, y: 2.5430748, z: 5.3988338}
+  - {x: 2.016149, y: 1.604666, z: -5.984558}
+  m_Dering: 1
+--- !u!1 &1264391884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1264391887}
+  - component: {fileID: 1264391885}
+  m_Layer: 0
+  m_Name: PostProcessing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1264391885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264391884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 4d95052410a50d14bbf8808083cb6813, type: 2}
+--- !u!4 &1264391887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264391884}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 964168412}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1307640986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1307640987}
+  m_Layer: 0
+  m_Name: Floor 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1307640987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307640986}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 315735836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1707588870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1707588871}
+  m_Layer: 0
+  m_Name: Floor Basement
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1707588871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707588870}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 315735836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2040387971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2040387972}
+  m_Layer: 0
+  m_Name: Floor 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2040387972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2040387971}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 315735836}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2126573019
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2126573020}
+  - component: {fileID: 2126573021}
+  m_Layer: 0
+  m_Name: Reflection Probe House
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2126573020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126573019}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.87, y: 1.167, z: -2.927}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 579715369}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!215 &2126573021
+ReflectionProbe:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126573019}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Type: 0
+  m_Mode: 1
+  m_RefreshMode: 0
+  m_TimeSlicingMode: 0
+  m_Resolution: 128
+  m_UpdateFrequency: 0
+  m_BoxSize: {x: 100, y: 13.5, z: 100}
+  m_BoxOffset: {x: 0, y: 5.05, z: 0}
+  m_NearClip: 0.3
+  m_FarClip: 1000
+  m_ShadowDistance: 100
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IntensityMultiplier: 1
+  m_BlendDistance: 0
+  m_HDR: 1
+  m_BoxProjection: 0
+  m_RenderDynamicObjects: 1
+  m_UseOcclusionCulling: 1
+  m_Importance: 1
+  m_CustomBakedTexture: {fileID: 0}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 964168412}
+  - {fileID: 579715369}
+  - {fileID: 315735836}
