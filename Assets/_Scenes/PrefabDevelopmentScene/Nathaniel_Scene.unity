@@ -1202,6 +1202,7 @@ Transform:
   - {fileID: 1102096244}
   - {fileID: 425577281}
   - {fileID: 1579424605}
+  - {fileID: 1913436108}
   m_Father: {fileID: 1462136814}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &95397565 stripped
@@ -12724,7 +12725,6 @@ Transform:
   - {fileID: 2081363626}
   - {fileID: 1322336105}
   - {fileID: 663521466}
-  - {fileID: 1913436108}
   - {fileID: 1998738452}
   m_Father: {fileID: 601898871}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18128,7 +18128,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1339306309}
+    m_TransformParent: {fileID: 93769566}
     m_Modifications:
     - target: {fileID: 2862281357096924472, guid: add063f7ff3029b46987b2463f6fd149, type: 3}
       propertyPath: m_LocalPosition.x
