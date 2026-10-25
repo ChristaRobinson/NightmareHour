@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    private const int Lens = 2;
+    private const int Lens = 1;
     
     private Light _lightComponent;
     private MeshRenderer _lensMeshRenderer;
@@ -20,13 +20,13 @@ public class Flashlight : MonoBehaviour
     {
         _lightComponent = GetComponentInChildren(typeof(Light)) as Light;
         _lensMeshRenderer = transform.GetChild(Lens).gameObject.GetComponent<MeshRenderer>();
-        
+
     }
 
     public void ToggleFlashlight()
     {
-        _lensMeshRenderer.material = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
-        _lightComponent.enabled = _isTurnedOn ? true : false;
+        _lensMeshRenderer.materials[Lens] = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
+        _lightComponent.enabled = _isTurnedOn ? false : true;
     }
 
     public void StartFlicker(float duration)
