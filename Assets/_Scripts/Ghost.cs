@@ -6,10 +6,10 @@ public class Ghost : MonoBehaviour
 {
     private Player player;
 
-    private int ghostAppearanceCount = 0;
+    private int _ghostAppearanceCount = 0;
     [SerializeField] private Transform[] ghostPoints;
 
-    private float _viewTolerance = 6.0f;
+    private float _viewTolerance = 8.0f;
 
     private float _distanceScalar = 1.0f;
 
@@ -32,6 +32,8 @@ public class Ghost : MonoBehaviour
     private void ViewTolerance()
     {
         if (player.IsViewingGhost())
+        {
+            Debug.Log("Character spots ghost. View Tolerance:" +  _viewTolerance);
             switch (player.GetGhostVisibility())
             {
                 case Player.GhostVisibility.Foveal:
@@ -46,11 +48,13 @@ public class Ghost : MonoBehaviour
                 case Player.GhostVisibility.None:
                     break;
             }
+        }
+            
 
         //Ghost should disappear.
         if (_viewTolerance <= 0.0f)
         {
-            transform.position = ghostPoints[++ghostAppearanceCount % ghostPoints.Length].position;
+            transform.position = ghostPoints[++_ghostAppearanceCount % ghostPoints.Length].position;
             _viewTolerance = 6.0f;
         }
     }

@@ -7,9 +7,9 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class Player : MonoBehaviour
 {
     private GameObject _camera;
-    private float _visualFOV = 60f;
+    private float _visualFOV = 50f;
     private float _viewDistance = 15f;
-    private float _peripheryFOV = 50f;
+    private float _peripheryFOV = 40f;
     private float _parafovealFOV = 25f;
     private float _fovealFOV = 10f;
     private float _viewAngle;
@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         
+        
     }
 
     IEnumerator RefreshGhostVisibility(float delay)
@@ -45,8 +46,14 @@ public class Player : MonoBehaviour
     void SpotGhost()
     {
         Collider[] ghost = Physics.OverlapSphere(_camera.transform.position, _viewDistance, ghostLayerMask);
-        Vector3 ghostDirection = (ghost[0].transform.position - _camera.transform.position).normalized;
+        if (ghost.Length == 0) return;
         
+        Vector3 ghostDirection = (ghost[0].transform.position - _camera.transform.position).normalized;
+        Debug.DrawRay(
+            _camera.transform.position,
+            ghostDirection,
+            Color.red
+        );
         if (Vector3.Angle(_camera.transform.forward, ghostDirection) < _visualFOV)
         {
             if (!Physics.Raycast(_camera.transform.position, ghostDirection, _viewDistance, environmentLayerMask))
@@ -59,6 +66,8 @@ public class Player : MonoBehaviour
                     _ghostVisibility = GhostVisibility.Foveal;
             }
         }
+        else
+            _ghostVisibility = GhostVisibility.None;
     }
 
     public bool IsViewingGhost() { return _ghostVisibility != GhostVisibility.None; }
