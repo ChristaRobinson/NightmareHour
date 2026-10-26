@@ -63,7 +63,7 @@ public class Flashlight : MonoBehaviour
 
     public bool IsIlluminatingGhost()
     {
-        if (transform.parent == null)
+        if (!transform.parent)
             return false;
         if (_player.ghostProximity.Length < 1)
             return false;

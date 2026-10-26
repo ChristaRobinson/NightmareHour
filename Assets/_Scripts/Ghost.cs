@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -22,6 +23,7 @@ public class Ghost : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         flashlight = GameObject.Find("Flashlight").GetComponent<Flashlight>();
+        StartCoroutine(RefreshViewTolerance(0.25f));
     }
 
     // Update is called once per frame
@@ -29,6 +31,15 @@ public class Ghost : MonoBehaviour
     {
         UpdateDistanceScalar();
         ViewTolerance();
+    }
+    
+    IEnumerator RefreshViewTolerance(float delay)
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(delay);
+            ViewTolerance();
+        }
     }
 
     private void ViewTolerance()
