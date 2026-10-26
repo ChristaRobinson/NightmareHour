@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     private float _parafovealFOV = 25f;
     private float _fovealFOV = 10f;
     private float _viewAngle;
+
+    public Collider[] ghostProximity;
     
     public enum GhostVisibility { Foveal, Parafoveal, Peripheral, None }
 
@@ -45,15 +47,11 @@ public class Player : MonoBehaviour
 
     void SpotGhost()
     {
-        Collider[] ghost = Physics.OverlapSphere(_camera.transform.position, _viewDistance, ghostLayerMask);
-        if (ghost.Length == 0) return;
+        ghostProximity = Physics.OverlapSphere(_camera.transform.position, _viewDistance, ghostLayerMask);
+        if (ghostProximity.Length == 0) return;
         
-        Vector3 ghostDirection = (ghost[0].transform.position - _camera.transform.position).normalized;
-        Debug.DrawRay(
-            _camera.transform.position,
-            ghostDirection,
-            Color.red
-        );
+        Vector3 ghostDirection = (ghostProximity[0].transform.position - _camera.transform.position).normalized;
+        
         if (Vector3.Angle(_camera.transform.forward, ghostDirection) < _visualFOV)
         {
             if (!Physics.Raycast(_camera.transform.position, ghostDirection, _viewDistance, environmentLayerMask))

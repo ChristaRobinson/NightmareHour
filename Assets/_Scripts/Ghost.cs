@@ -5,6 +5,7 @@ using Random = UnityEngine.Random;
 public class Ghost : MonoBehaviour
 {
     private Player player;
+    private Flashlight flashlight;
 
     private int _ghostAppearanceCount = 0;
     [SerializeField] private Transform[] ghostPoints;
@@ -20,6 +21,7 @@ public class Ghost : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        flashlight = GameObject.Find("Flashlight").GetComponent<Flashlight>();
     }
 
     // Update is called once per frame
@@ -49,7 +51,9 @@ public class Ghost : MonoBehaviour
                     break;
             }
         }
-            
+
+        if (_viewTolerance > 2.0f && flashlight.IsIlluminatingGhost())
+            _viewTolerance = 2.0f;
 
         //Ghost should disappear.
         if (_viewTolerance <= 0.0f)
