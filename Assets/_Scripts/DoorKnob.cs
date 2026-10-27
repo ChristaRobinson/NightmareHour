@@ -7,11 +7,8 @@ public class DoorKnob : MonoBehaviour
     private HingeJoint _doorHinge;
     private Rigidbody _doorRigidbody;
     private XRGrabInteractable _grabInteractable;
-    private AudioSource _doorAudio;
-    private DoorLock _doorLock;
     private bool _isOpen;
     private bool _isInteracting;
-    
 
     public float _knobCurrentTurnAngle;
 
@@ -24,8 +21,6 @@ public class DoorKnob : MonoBehaviour
     {
         _doorHinge = transform.parent.GetComponentInChildren<HingeJoint>();
         _doorRigidbody = transform.parent.GetComponentInChildren<Rigidbody>();
-        _doorLock = transform.parent.GetComponentInChildren<DoorLock>();
-        _doorAudio = transform.GetComponent<AudioSource>();
         
         _grabInteractable = GetComponent<XRGrabInteractable>();
         _grabInteractable.selectEntered.AddListener(OnGrab);
@@ -78,18 +73,11 @@ public class DoorKnob : MonoBehaviour
 
     private void OnGrab(SelectEnterEventArgs args)
     {
-        
-        if (_doorLock.isLocked)
-        {
-            _doorAudio.Play();
-            return;
-        }
         _isInteracting = true;
     }
 
     private void OnRelease(SelectExitEventArgs args)
     {
         _isInteracting = false;
-        _doorAudio.Stop();
     }
 }

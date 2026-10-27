@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Flashlight : MonoBehaviour
 {
-    private const int Lens = 1;
-
-    private Player _player;
+    private const int Lens = 2;
+    
     private Light _lightComponent;
     private MeshRenderer _lensMeshRenderer;
     private bool _isTurnedOn = false;
@@ -19,16 +18,15 @@ public class Flashlight : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         _lightComponent = GetComponentInChildren(typeof(Light)) as Light;
         _lensMeshRenderer = transform.GetChild(Lens).gameObject.GetComponent<MeshRenderer>();
-
+        
     }
 
     public void ToggleFlashlight()
     {
-        _lensMeshRenderer.materials[Lens] = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
-        _lightComponent.enabled = _isTurnedOn ? false : true;
+        _lensMeshRenderer.material = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
+        _lightComponent.enabled = _isTurnedOn ? true : false;
     }
 
     public void StartFlicker(float duration)
@@ -59,25 +57,5 @@ public class Flashlight : MonoBehaviour
         StopCoroutine(FlashlightFlicker());
         _flickerEventEnabled = false;
         _flickerDuration = 0;
-    }
-
-    public bool IsIlluminatingGhost()
-    {
-        if (!transform.parent)
-            return false;
-        if (_player.ghostProximity.Length < 1)
-            return false;
-        
-        Vector3 ghostDirection = (_player.ghostProximity[0].transform.position - transform.position).normalized;
-        if (Vector3.Angle(transform.up, ghostDirection) < _lightComponent.innerSpotAngle)
-        {
-            if (!Physics.Raycast(transform.position, ghostDirection, _lightComponent.intensity,
-                    LayerMask.GetMask("Default")))
-            {
-                return true;
-            }
-        }
-
-        return false;
     }
 }
