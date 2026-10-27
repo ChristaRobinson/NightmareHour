@@ -40,15 +40,16 @@ public class DrainWater : MonoBehaviour
         end.y = targetY;
         transform.localPosition = end;
     }
+// use gloabal scale
 
     IEnumerator ShrinkRoutine()
     {
-        Vector3 startScale = transform.localScale;
+        Vector3 startScale = transform.lossyScale;
         for (float t = 0f; t < shrinkDuration; t += Time.deltaTime)
         {
-            transform.localScale = Vector3.Lerp(startScale, Vector3.zero, t / shrinkDuration);
+            transform.localScale = Vector3.Scale(transform.localScale, Vector3.Lerp(Vector3.one, Vector3.zero, t / shrinkDuration));
             yield return null;
         }
-        transform.localScale = Vector3.zero;
+        transform.lossyScale = Vector3.zero;
     }
 }
