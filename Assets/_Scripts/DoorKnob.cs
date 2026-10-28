@@ -1,3 +1,4 @@
+using _Scripts;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
@@ -79,7 +80,7 @@ public class DoorKnob : MonoBehaviour
     private void OnGrab(SelectEnterEventArgs args)
     {
         
-        if (_doorLock.isLocked)
+        if (_doorLock.isLocked && _knobCurrentTurnAngle != 0)
         {
             _doorAudio.Play();
             return;
