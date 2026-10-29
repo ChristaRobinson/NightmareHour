@@ -17,6 +17,7 @@ namespace _Scripts
         private bool _hasLock;
         private Transform _grabbingHand;
         private float _initialHandRotation;
+        private Quaternion _initialDoorRotation;
     
 
         private float _knobCurrentTurnAngle;
@@ -34,6 +35,7 @@ namespace _Scripts
             _grabInteractable = GetComponentInParent<XRGrabInteractable>();
             _grabInteractable.selectEntered.AddListener(OnSelectEntered);
             _grabInteractable.selectExited.AddListener(OnSelectExited);
+            _initialDoorRotation = transform.parent.transform.rotation;
 
             _knobCurrentTurnAngle = Mathf.Abs(transform.localEulerAngles.z);
             _knobUnlockAngle = 35.0f;
@@ -69,7 +71,7 @@ namespace _Scripts
             if (Mathf.Abs(_doorHinge.angle) < _doorClosedBias)
             {
                 _doorRigidbody.constraints = RigidbodyConstraints.FreezeAll;
-                transform.parent.transform.rotation = Quaternion.identity;
+                transform.parent.transform.rotation = _initialDoorRotation;
             }
         }
 

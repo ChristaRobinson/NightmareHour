@@ -25,14 +25,15 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        _camera = GameObject.FindGameObjectWithTag("MainCamera");
+        _camera = GetComponentInChildren<Camera>().gameObject;
         StartCoroutine(RefreshGhostVisibility(0.5f));
     }
     
     // Update is called once per frame
     void Update()
     {
-        
+        if(GetGhostVisibility() == GhostVisibility.Peripheral)
+            Debug.Log("Looking at ghost.");
         
     }
 
@@ -47,6 +48,7 @@ public class Player : MonoBehaviour
 
     void SpotGhost()
     {
+        Debug.Log("Ghost in proximity");
         ghostProximity = Physics.OverlapSphere(_camera.transform.position, _viewDistance, ghostLayerMask);
         if (ghostProximity.Length == 0) return;
         

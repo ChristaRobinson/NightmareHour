@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1547619179774506957}
   - component: {fileID: 5387415101661482596}
   - component: {fileID: 314865639820561400}
+  - component: {fileID: 8420749285015538747}
   m_Layer: 0
   m_Name: GreyKey
   m_TagString: Key
@@ -108,7 +109,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders: []
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 3
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_FocusMode: 1
@@ -175,7 +176,7 @@ MonoBehaviour:
   m_SnapToColliderVolume: 1
   m_ReinitializeDynamicAttachEverySingleGrab: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 1
   m_PredictedVisualsTransform: {fileID: 0}
   m_VelocityDamping: 1
   m_VelocityScale: 1
@@ -223,6 +224,22 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &8420749285015538747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7619017096696241397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c0a9a946bef60468b44494b5138277, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::XRInteractionFeedback
+  targetRenderer: {fileID: 0}
+  normalColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  selectedColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1001 &4701851341323102564
 PrefabInstance:
   m_ObjectHideFlags: 0

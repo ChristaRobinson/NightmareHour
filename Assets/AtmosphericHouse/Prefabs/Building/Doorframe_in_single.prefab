@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2432753610105149174}
   - component: {fileID: 5774118359153601144}
   - component: {fileID: 3321808459174377058}
-  m_Layer: 0
+  m_Layer: 21
   m_Name: Doorframe_in_single
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,10 +64,12 @@ MeshRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 499b02b0efd97e94fba55b0d17f83e13, type: 2}
+  - {fileID: 2100000, guid: c73af0933f6d37842988347f4b05383a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,9 +87,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &2432753610105149174
 BoxCollider:
