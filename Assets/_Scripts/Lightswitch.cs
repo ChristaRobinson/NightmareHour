@@ -3,24 +3,16 @@ using UnityEngine;
 
 public class Lightswitch : MonoBehaviour
 {
-    public GameObject[] lightSources;
-    private List<Light> _lights;
+    public Light[] lightSources;
 
     public void Start()
     {
-        foreach (GameObject source in lightSources)
-        {
-            if(source.GetComponent<Light>() != null)
-                _lights.Add(source.GetComponent<Light>());
-            else
-                _lights.Add(source.GetComponentInChildren<Light>());
-        }
             
     }
 
     public void Lightswitch_Toggle()
     {
-        foreach (Light light in _lights)
+        foreach (Light light in lightSources)
         {
             switch (light.enabled)
             {

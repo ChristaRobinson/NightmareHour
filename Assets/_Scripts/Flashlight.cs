@@ -36,12 +36,14 @@ namespace _Scripts
             _audioSource.Play();
 
             Material[] flashlightMats = _lensMeshRenderer.materials;
+            _lightComponent.enabled = _isTurnedOn ? false : true;
+            _isTurnedOn = _lightComponent.enabled;
+            
             flashlightMats[InnerLight] = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
             flashlightMats[Bulb] = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
             
             _lensMeshRenderer.materials = flashlightMats;
-            _lightComponent.enabled = _isTurnedOn ? false : true;
-            _isTurnedOn = _lightComponent.enabled;
+            
         }
 
         public void StartFlicker(float duration)

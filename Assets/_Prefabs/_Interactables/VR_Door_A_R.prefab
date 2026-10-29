@@ -348,7 +348,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8df0316eca628245889a3ec19773990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorKnob
-  doorAngle: 0
 --- !u!135 &2028606448630644552
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -415,7 +414,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8df0316eca628245889a3ec19773990, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DoorKnob
-  doorAngle: 0
 --- !u!135 &3353797029878943337
 SphereCollider:
   m_ObjectHideFlags: 0
