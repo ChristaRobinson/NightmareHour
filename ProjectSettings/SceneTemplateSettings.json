@@ -1,5 +1,10 @@
 {
-    "templatePinStates": [],
+    "templatePinStates": [
+        {
+            "templateId": "Outdoors (URP)",
+            "isEnabled": true
+        }
+    ],
     "dependencyTypeInfos": [
         {
             "userAdded": false,
