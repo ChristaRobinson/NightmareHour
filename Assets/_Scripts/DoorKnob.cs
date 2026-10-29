@@ -1,95 +1,99 @@
+using System;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using Vector3 = UnityEngine.Vector3;
 
-public class DoorKnob : MonoBehaviour
+namespace _Scripts
 {
-    private HingeJoint _doorHinge;
-    private Rigidbody _doorRigidbody;
-    private XRGrabInteractable _grabInteractable;
-    private AudioSource _doorAudio;
-    private DoorLock _doorLock;
-    private bool _isOpen;
-    private bool _isInteracting;
+    public class DoorKnob : MonoBehaviour
+    {
+        private HingeJoint _doorHinge;
+        private Rigidbody _doorRigidbody;
+        private XRGrabInteractable _grabInteractable;
+        private AudioSource _doorAudio;
+        private DoorLock _doorLock;
+        private bool _isInteracting;
+        private bool _hasLock;
+        private Transform _grabbingHand;
+        private float _initialHandRotation;
     
 
-    public float _knobCurrentTurnAngle;
+        private float _knobCurrentTurnAngle;
 
-    private float _knobUnlockAngle;
-    private float _doorClosedBias;
-
-    public float doorAngle;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Awake()
-    {
-        _doorHinge = transform.parent.GetComponentInChildren<HingeJoint>();
-        _doorRigidbody = transform.parent.GetComponentInChildren<Rigidbody>();
-        _doorLock = transform.parent.GetComponentInChildren<DoorLock>();
-        _doorAudio = transform.GetComponent<AudioSource>();
-        
-        _grabInteractable = GetComponent<XRGrabInteractable>();
-        _grabInteractable.selectEntered.AddListener(OnGrab);
-        _grabInteractable.selectExited.AddListener(OnRelease);
-
-        _knobCurrentTurnAngle = Mathf.Abs(transform.localEulerAngles.z);
-        _knobUnlockAngle = 25.0f;
-        _doorClosedBias = 2.0f;
-        _isOpen = false;
-        _isInteracting = false;
-    }
-
-    void Update()
-    {
-        switch (_isInteracting)
+        private float _knobUnlockAngle;
+        private float _doorClosedBias;
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Awake()
         {
-            case true:
-                _knobCurrentTurnAngle = Mathf.Abs(transform.localEulerAngles.z);
-                break;
-            case false:
-                transform.localEulerAngles = new Vector3(0, 0, 0);
-                _knobCurrentTurnAngle = 0.0f;
-                if (doorAngle < _doorClosedBias)
-                    doorAngle = 0;
-                break;
-        }
-        
-        doorAngle = Mathf.Abs(_doorHinge.angle);
-        _isOpen = doorAngle > 0 ? true : false;
-        LatchBolt_Unlock();
-        LatchBolt_Lock();
+            _doorHinge = transform.parent.GetComponent<HingeJoint>();
+            _doorRigidbody = transform.parent.GetComponentInChildren<Rigidbody>();
+            _doorLock = transform.parent.GetComponentInChildren<DoorLock>();
+            _doorAudio = transform.GetComponent<AudioSource>();
+            _hasLock = _doorLock != null;
+            _grabInteractable = GetComponentInParent<XRGrabInteractable>();
+            _grabInteractable.selectEntered.AddListener(OnSelectEntered);
+            _grabInteractable.selectExited.AddListener(OnSelectExited);
 
-    }
-    private void LatchBolt_Unlock()
-    {
-        if (_isInteracting && (_knobCurrentTurnAngle > _knobUnlockAngle && _knobCurrentTurnAngle < 330))
+            _knobCurrentTurnAngle = Mathf.Abs(transform.localEulerAngles.z);
+            _knobUnlockAngle = 35.0f;
+            _doorClosedBias = 2.0f;
+            
+            _isInteracting = false;
+        }
+
+        private void Update()
         {
-            _doorRigidbody.constraints &= ~RigidbodyConstraints.FreezeRotationY;
+            switch (_isInteracting)
+            {
+                case true:
+                    _knobCurrentTurnAngle = Mathf.DeltaAngle(_grabbingHand.transform.localEulerAngles.z,_initialHandRotation);
+                    LatchBolt_Unlock();
+                    break;
+                case false:
+                    _knobCurrentTurnAngle = 0.0f;
+                    LatchBolt_Lock();
+                    break;
+            }
         }
-    }
-
-    private void LatchBolt_Lock()
-    {
-        if(doorAngle == 0 && _knobCurrentTurnAngle < _knobUnlockAngle)
+        private void LatchBolt_Unlock()
         {
-            _doorRigidbody.constraints |= RigidbodyConstraints.FreezeRotationY;
-            _isOpen = false;
+            if (_isInteracting && (Mathf.Abs(_knobCurrentTurnAngle) > Mathf.Abs(_knobUnlockAngle)))
+            {
+                _doorRigidbody.constraints = RigidbodyConstraints.None;
+            }
         }
-    }
 
-    private void OnGrab(SelectEnterEventArgs args)
-    {
-        
-        if (_doorLock.isLocked)
+        private void LatchBolt_Lock()
         {
-            _doorAudio.Play();
-            return;
+            if (Mathf.Abs(_doorHinge.angle) < _doorClosedBias)
+            {
+                _doorRigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                transform.parent.transform.rotation = Quaternion.identity;
+            }
         }
-        _isInteracting = true;
-    }
 
-    private void OnRelease(SelectExitEventArgs args)
-    {
-        _isInteracting = false;
-        _doorAudio.Stop();
+        private void OnSelectEntered(SelectEnterEventArgs args)
+        {
+            if (_hasLock && _doorLock.isActiveAndEnabled)
+            {
+                _doorAudio.Play();
+                return;
+            }
+            
+            _grabbingHand = args.interactorObject.transform.parent.transform;
+            _initialHandRotation = _grabbingHand.transform.localEulerAngles.z;
+            
+            _isInteracting = true;
+        }
+
+        private void OnSelectExited(SelectExitEventArgs args)
+        {
+            _initialHandRotation = 0;
+            _grabbingHand = null;
+            _isInteracting = false;
+            if(_doorAudio)
+                _doorAudio.Stop();
+        }
     }
 }
