@@ -15,7 +15,7 @@ namespace _Scripts
         private int _ghostAppearanceCount = -1;
         [SerializeField] private Transform[] ghostPoints;
 
-        private float _viewTolerance = 8.0f;
+        private float _viewTolerance = 10.0f;
 
         private float _distanceScalar = 1.0f;
 
@@ -51,7 +51,7 @@ namespace _Scripts
                 if(ghostPoints.Length > 0)
                     transform.position = ghostPoints[++_ghostAppearanceCount % ghostPoints.Length].position;
                 
-                _viewTolerance = 6.0f;
+                _viewTolerance = 10.0f;
             }
             UpdateDistanceScalar();
         }
