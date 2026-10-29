@@ -80,13 +80,12 @@ namespace _Scripts
         {
             _grabbingHand = args.interactorObject.transform.parent.transform;
             _initialHandRotation = _grabbingHand.transform.localEulerAngles.z;
-            if (_doorLock != null)
+            if (transform.parent.GetComponentInChildren<DoorLock>() != null)
                 if (_doorLock.isLocked && _knobCurrentTurnAngle != 0)
                 {
                     _doorAudio.Play();
                     return;
                 }
-
             _isInteracting = true;
         }
 

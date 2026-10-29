@@ -10,9 +10,9 @@ namespace _Scripts
 
         private AudioSource _audioSource;
         private Player _player;
-        Light _lightComponent;
+        private Light _lightComponent;
         private MeshRenderer _lensMeshRenderer;
-        private bool _isTurnedOn;
+        private bool _isTurnedOn = false;
         private bool _flickerEventEnabled;
         private float _flickerDuration;
      
@@ -25,6 +25,7 @@ namespace _Scripts
             _audioSource = GetComponent<AudioSource>();
             _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
             _lightComponent = transform.Find("Torchlight").GetComponent<Light>();
+            _lightComponent.enabled = false;
             _lensMeshRenderer = transform.Find("flashlight").GetComponent<MeshRenderer>();
             _isTurnedOn = _lightComponent.enabled;
 
@@ -33,9 +34,13 @@ namespace _Scripts
         public void ToggleFlashlight()
         {
             _audioSource.Play();
-            _lensMeshRenderer.materials[InnerLight] = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
-            _lensMeshRenderer.materials[Bulb] = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
-            _lightComponent.enabled = false;
+
+            Material[] flashlightMats = _lensMeshRenderer.materials;
+            flashlightMats[InnerLight] = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
+            flashlightMats[Bulb] = _isTurnedOn ? emissiveMaterial : diffuseMaterial;
+            
+            _lensMeshRenderer.materials = flashlightMats;
+            _lightComponent.enabled = _isTurnedOn ? false : true;
             _isTurnedOn = _lightComponent.enabled;
         }
 

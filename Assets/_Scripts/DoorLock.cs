@@ -13,6 +13,7 @@ namespace _Scripts
             if (collision.gameObject == requiredKey)
             {
                 isLocked = false;
+                Debug.Log("Door unlocked");
             }
         }
     }
