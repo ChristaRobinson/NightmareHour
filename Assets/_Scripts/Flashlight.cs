@@ -13,8 +13,11 @@ namespace _Scripts
         private Light _lightComponent;
         private MeshRenderer _lensMeshRenderer;
         private bool _isTurnedOn = false;
+        
+        
         private bool _flickerEventEnabled;
         private float _flickerDuration;
+        private Coroutine _flickerCoroutine;
      
 
         [SerializeField] private Material emissiveMaterial;
@@ -48,32 +51,45 @@ namespace _Scripts
 
         public void StartFlicker(float duration)
         {
+            if (_flickerCoroutine != null)
+                StopCoroutine(_flickerCoroutine);
+
             _flickerEventEnabled = true;
             _flickerDuration = duration;
-            StartCoroutine(FlashlightFlicker());
+
+            _flickerCoroutine = StartCoroutine(FlashlightFlicker());
         }
 
         private IEnumerator FlashlightFlicker()
         {
-            while (_flickerDuration > 0 && _flickerEventEnabled)
+            bool originalState = _lightComponent.enabled;
+
+            while (_flickerDuration > 0f && _flickerEventEnabled)
             {
                 _flickerDuration -= Time.deltaTime;
-            
-                /*WIP - Flicker Logic Here */
 
-                yield return null;
+                _lightComponent.enabled = Random.value > 0.5f;
+
+                yield return new WaitForSeconds(
+                    Random.Range(0.05f, 0.20f));
             }
 
-            if (_flickerDuration < 0)
-                EndFlicker();
+            _lightComponent.enabled = originalState;
+
+            EndFlicker();
 
         }
 
         private void EndFlicker()
         {
-            StopCoroutine(FlashlightFlicker());
+            if (_flickerCoroutine != null)
+            {
+                StopCoroutine(_flickerCoroutine);
+                _flickerCoroutine = null;
+            }
+
             _flickerEventEnabled = false;
-            _flickerDuration = 0;
+            _flickerDuration = 0f;
         }
 
         public bool IsIlluminatingGhost()
