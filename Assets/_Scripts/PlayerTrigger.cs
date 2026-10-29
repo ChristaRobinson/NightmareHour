@@ -11,11 +11,12 @@ public class PlayerTrigger : MonoBehaviour
         FinalEventObjects.SetActive(false);
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         InitialEventObjects.SetActive(true);
         FinalEventObjects.SetActive(false);
     }
+    */
     private void OnTriggerExit(Collider other)
     {
         InitialEventObjects.SetActive(false);

@@ -50,6 +50,6 @@ public class DrainWater : MonoBehaviour
             transform.localScale = Vector3.Scale(transform.localScale, Vector3.Lerp(Vector3.one, Vector3.zero, t / shrinkDuration));
             yield return null;
         }
-        transform.lossyScale = Vector3.zero;
+        //transform.lossyScale = Vector3.zero;
     }
 }

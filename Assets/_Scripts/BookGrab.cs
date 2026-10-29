@@ -13,7 +13,7 @@ public class BookGrab : MonoBehaviour
         UpdateBookState();
     }
 
-    // Update is called once per frame
+    /* Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
@@ -21,6 +21,7 @@ public class BookGrab : MonoBehaviour
             TriggerActivation();
         }
     }
+    */
 
     public void TriggerActivation()
     {
