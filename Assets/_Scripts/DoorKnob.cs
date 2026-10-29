@@ -5,6 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class DoorKnob : MonoBehaviour
 {
+    private Transform[] _doorKnobs = new Transform[2]
     private HingeJoint _doorHinge;
     private Rigidbody _doorRigidbody;
     private XRGrabInteractable _grabInteractable;
@@ -12,6 +13,8 @@ public class DoorKnob : MonoBehaviour
     private DoorLock _doorLock;
     private bool _isOpen;
     private bool _isInteracting;
+
+    private Transform grabbingHand;
     
 
     public float _knobCurrentTurnAngle;
@@ -23,6 +26,8 @@ public class DoorKnob : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
+        _doorKnobs[0] = transform.parent.GetChild(2);
+        _doorKnobs[1] = transform.parent.GetChild(3);
         _doorHinge = transform.parent.GetComponentInChildren<HingeJoint>();
         _doorRigidbody = transform.parent.GetComponentInChildren<Rigidbody>();
         _doorLock = transform.parent.GetComponentInChildren<DoorLock>();
@@ -60,6 +65,25 @@ public class DoorKnob : MonoBehaviour
         LatchBolt_Lock();
 
     }
+
+    void FixedUpdate()
+    {
+        if (grabbingHand is null)
+            return;
+
+        Vector3 doorToHand =
+            grabbingHand.position - _doorHinge.transform.position;
+
+        Vector3 forceDirection =
+            Vector3.ProjectOnPlane(
+                doorToHand,
+                _doorHinge.transform.up);
+
+        _doorRigidbody.AddForceAtPosition(
+            forceDirection * 50f,
+            grabbingHand.position,
+            ForceMode.Force);
+    }
     private void LatchBolt_Unlock()
     {
         if (_isInteracting && (_knobCurrentTurnAngle > _knobUnlockAngle && _knobCurrentTurnAngle < 330))
@@ -79,18 +103,21 @@ public class DoorKnob : MonoBehaviour
 
     private void OnGrab(SelectEnterEventArgs args)
     {
-        
-        if (_doorLock.isLocked && _knobCurrentTurnAngle != 0)
-        {
-            _doorAudio.Play();
-            return;
-        }
+        grabbingHand = args.interactorObject.transform;
+        if(_doorLock != null)
+            if (_doorLock.isLocked && _knobCurrentTurnAngle != 0)
+            {
+                _doorAudio.Play();
+             return;
+            }
         _isInteracting = true;
     }
 
     private void OnRelease(SelectExitEventArgs args)
     {
+        grabbingHand = null;
         _isInteracting = false;
-        _doorAudio.Stop();
+        if(_doorAudio)
+            _doorAudio.Stop();
     }
 }

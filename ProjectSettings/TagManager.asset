@@ -7,6 +7,9 @@ TagManager:
   - Anchor
   - Ghost
   - Key
+  - RightHand
+  - LeftHand
+  - DoorKnob
   layers:
   - Default
   - TransparentFX
