@@ -81,7 +81,7 @@ MonoBehaviour:
   m_UnlimitedInAirJumps: 0
   m_InAirJumpCount: 1
   m_JumpForgivenessWindow: 0.25
-  m_JumpHeight: 1.25
+  m_JumpHeight: 0.3
   m_VariableHeightJump: 1
   m_MinJumpHoldTime: 0.1
   m_MaxJumpHoldTime: 0.5
@@ -511,7 +511,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Mediator: {fileID: 1885931468482775341}
   m_TransformationPriority: 0
-  m_MoveSpeed: 2.5
+  m_MoveSpeed: 1.2
   m_InAirControlModifier: 0.5
   m_EnableStrafe: 1
   m_EnableFly: 0
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_TransformationPriority: 0
   m_TurnAmount: 45
   m_DebounceTime: 0.5
-  m_EnableTurnLeftRight: 1
+  m_EnableTurnLeftRight: 0
   m_EnableTurnAround: 1
   m_DelayTime: 0
   m_LeftHandTurnInput:
@@ -1472,7 +1472,7 @@ GameObject:
   - component: {fileID: 3773562270902209956}
   - component: {fileID: 2240281672398316432}
   - component: {fileID: 509100501374095646}
-  m_Layer: 2
+  m_Layer: 0
   m_Name: Player XR Origin
   m_TagString: Player
   m_Icon: {fileID: 0}

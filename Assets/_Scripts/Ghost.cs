@@ -1,14 +1,18 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 namespace _Scripts
 {
     public class Ghost : MonoBehaviour
     {
+        private XRBaseInteractable _baseInteractable;
         private Player _player;
         private Flashlight _flashlight;
+        private GameObject _ghost;
 
-        private int _ghostAppearanceCount = 0;
+        private int _ghostAppearanceCount = -1;
         [SerializeField] private Transform[] ghostPoints;
 
         private float _viewTolerance = 8.0f;
@@ -21,27 +25,39 @@ namespace _Scripts
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
+            _ghost = GameObject.FindGameObjectWithTag("Ghost");
             _player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
             _flashlight = GameObject.Find("Flashlight").GetComponent<Flashlight>();
-            StartCoroutine(RefreshViewTolerance(0.25f));
+            _baseInteractable = GetComponent<XRBaseInteractable>();
+            
         }
+        
 
         // Update is called once per frame
         void Update()
         {
+            if (_player.CanSeeGhost(_ghost.transform))
+            {
+                _viewTolerance -= Time.deltaTime * 3.0f * _distanceScalar;
+                Debug.Log("View tolerance: " + _viewTolerance);
+            }
+            if (_viewTolerance > 2.0f && _flashlight.IsIlluminatingGhost())
+                _viewTolerance = 2.0f;
+            else if (_viewTolerance <= 2.0f)
+                _viewTolerance = 0.0f;
+            
+            if (_viewTolerance <= 0.0f)
+            {
+                if(ghostPoints.Length > 0)
+                    transform.position = ghostPoints[++_ghostAppearanceCount % ghostPoints.Length].position;
+                
+                _viewTolerance = 6.0f;
+            }
             UpdateDistanceScalar();
         }
-    
-        IEnumerator RefreshViewTolerance(float delay)
-        {
-            while (true)
-            {
-                yield return new WaitForSeconds(delay);
-                ViewTolerance();
-            }
-        }
 
-        private void ViewTolerance()
+        /*This is too inconsistent... May get rid of this*/
+        /*private void ViewTolerance()
         {
             if (_player.IsViewingGhost())
             {
@@ -62,10 +78,7 @@ namespace _Scripts
                 }
             }
 
-            if (_viewTolerance > 2.0f && _flashlight.IsIlluminatingGhost())
-                _viewTolerance = 2.0f;
-            else if (_viewTolerance <= 2.0f)
-                _viewTolerance = 0.0f;
+            
 
             //Ghost should disappear.
             if (_viewTolerance <= 0.0f)
@@ -75,7 +88,7 @@ namespace _Scripts
                 
                 _viewTolerance = 6.0f;
             }
-        }
+        }*/
 
         private void UpdateDistanceScalar()
         {
