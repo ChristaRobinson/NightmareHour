@@ -5,10 +5,7 @@ public class Lightswitch : MonoBehaviour
 {
     public Light[] lightSources;
 
-    public void Start()
-    {
-            
-    }
+    
 
     public void Lightswitch_Toggle()
     {
@@ -16,8 +13,12 @@ public class Lightswitch : MonoBehaviour
         {
             switch (light.enabled)
             {
-                case true: light.enabled = false; break;
-                case false: light.enabled = true; break;
+                case true: light.enabled = false;
+                    GetComponentInParent<ToggleMaterialAnimation>().PlayToggleAnimation(false);
+                    break;
+                case false: light.enabled = true;
+                    GetComponentInParent<ToggleMaterialAnimation>().PlayToggleAnimation(true);
+                    break;
             }
         }
     }
