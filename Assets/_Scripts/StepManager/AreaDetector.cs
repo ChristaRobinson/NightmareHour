@@ -1,20 +1,18 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AreaDetector : MonoBehaviour
 {
-   public string GetCurrentArea()          
-   {
-       
-       return ""; // Placeholder
-   }
+    //Assign an area name to signal out later
+    public string areaName;
+    public static UnityEvent OnAreaEntered;
 
-   public void OnPlayerEnterArea(string area)
-   {
-       
-   }
-
-   public void OnPlayerExitArea(string area)
-   {
-       
-   }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Player is in the " + this.gameObject.name + " area");
+            OnAreaEntered.Invoke();
+        }
+    }
 }
