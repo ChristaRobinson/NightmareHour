@@ -2,43 +2,27 @@ using UnityEngine;
 
 public class ToggleMaterialAnimation : MonoBehaviour
 {
-    private Animation animation;
-    public enum Type { CeilingFan }
+    [SerializeField]
+    private MeshRenderer meshRenderer;
 
-    public Type type;
+    private Material[] _materials;
+    
 
     private bool _isTurnedOn;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        animation = GetComponent<Animation>();
+        _materials = Resources.LoadAll<Material>("CeilingFan");
     }
 
     // Update is called once per frame
-    public void PlayToggleAnimation(bool isActive)
+    public void Toggle(bool isTurnedOn)
     {
-        _isTurnedOn = isActive;
-        Toggle();
-
-    }
-
-    private void Toggle()
-    {
-        switch (type)
-        {
-            case Type.CeilingFan:
-                switch (_isTurnedOn)
-                {
-                    case true: animation.Play("CeilingFan_Off");
-                        break;
-                    case false: animation.Play("CeilingFan_On");
-                        break;
-                }
-                break;
-            default:
-                break;
-                
-        }
+        Material[] meshMaterials = meshRenderer.materials;
         
+        meshMaterials[0] = isTurnedOn ? _materials[1] : _materials[0];
+
+        meshRenderer.materials = meshMaterials;
+
     }
 }

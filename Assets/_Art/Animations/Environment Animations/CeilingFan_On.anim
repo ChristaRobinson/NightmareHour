@@ -22,6 +22,8 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: 2100000, guid: 99b4d23f47f8f204dabc58cc0ebfeaa7, type: 2}
+    - time: 0.016666668
+      value: {fileID: 2100000, guid: 99b4d23f47f8f204dabc58cc0ebfeaa7, type: 2}
     attribute: 'm_Materials.Array.data[0]'
     path: CeilingFan_Lamps
     classID: 23
@@ -40,7 +42,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.016666668
+    m_StopTime: 0.033333335
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

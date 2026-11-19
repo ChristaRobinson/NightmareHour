@@ -17,14 +17,13 @@ public class Footsteps : MonoBehaviour
     void Start()
     {
         _footsteps = Resources.LoadAll<AudioClip>("Footsteps");
-        _audioSource = GetComponent<AudioSource>();
+        _audioSource = GetComponentInChildren<AudioSource>();
         _lastStepPosition = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-
         Vector3 movement = transform.position - _lastStepPosition;
         movement.y = 0f;
 
@@ -33,15 +32,18 @@ public class Footsteps : MonoBehaviour
         if (_footstepDistance >= _footstepThreshold)
         {
             _footstepDistance -= _footstepThreshold;
-            PlayFootStep();
+            //if(!_audioSource.isPlaying)
+                PlayFootStep();
         }
+        
+        _lastStepPosition = transform.position;
     }
 
     private void PlayFootStep()
     {
         int footstepIndex = Random.Range(0, _footsteps.Length);
         if (footstepIndex == _lastAudioClip)
-            footstepIndex += 1 % _footsteps.Length;
+            footstepIndex = (footstepIndex + 1) % _footsteps.Length;
         _audioSource.PlayOneShot(_footsteps[footstepIndex]);
         _lastAudioClip = footstepIndex;
     }

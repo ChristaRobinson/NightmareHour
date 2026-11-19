@@ -62,6 +62,7 @@ namespace _Scripts
 
         private IEnumerator FlashlightFlicker()
         {
+            Debug.Log("FlashlightFlicker");
             bool originalState = _lightComponent.enabled;
 
             while (_flickerDuration > 0f && _flickerEventEnabled)
