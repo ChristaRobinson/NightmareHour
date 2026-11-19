@@ -15,7 +15,7 @@ namespace _Scripts
         private int _ghostAppearanceCount = -1;
         [SerializeField] private Transform[] ghostPoints;
 
-        private float _viewTolerance = 10.0f;
+        private float _viewTolerance = 7.0f;
 
         private float _distanceScalar = 1.0f;
 
@@ -39,7 +39,7 @@ namespace _Scripts
             if (_player.CanSeeGhost(_ghost.transform))
             {
                 _viewTolerance -= Time.deltaTime * 3.0f * _distanceScalar;
-                Debug.Log("View tolerance: " + _viewTolerance);
+                //Debug.Log("View tolerance: " + _viewTolerance);
             }
             if (_viewTolerance > 2.0f && _flashlight.IsIlluminatingGhost())
                 _viewTolerance = 2.0f;
