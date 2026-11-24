@@ -11,6 +11,7 @@ TagManager:
   - LeftHand
   - DoorKnob
   - Crowbar
+  - Flashlight
   layers:
   - Default
   - TransparentFX

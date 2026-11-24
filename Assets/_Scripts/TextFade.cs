@@ -6,11 +6,20 @@ public class TextFader : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textMesh;
     [SerializeField] private float fadeDuration = 1.5f;
+    [SerializeField] private bool StartEnabled = false;
 
     private Coroutine currentFade;
 
     private void Awake()
     {
+        if (StartEnabled)
+        {
+            textMesh.enabled = true;
+        }
+        else
+        {
+            textMesh.enabled = false;
+        }
         if (textMesh == null)
             textMesh = GetComponent<TextMeshProUGUI>();
     }
