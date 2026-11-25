@@ -26,6 +26,7 @@ public class TextFader : MonoBehaviour
 
     public void StartFadeIn()
     {
+        textMesh.enabled = true;
         StartFade(1f);
     }
 
