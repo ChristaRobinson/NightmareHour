@@ -12,16 +12,14 @@ public class TextFader : MonoBehaviour
 
     private void Awake()
     {
-        if (StartEnabled)
-        {
-            textMesh.enabled = true;
-        }
-        else
-        {
-            textMesh.enabled = false;
-        }
+        
         if (textMesh == null)
             textMesh = GetComponent<TextMeshProUGUI>();
+
+        textMesh.enabled = StartEnabled;
+
+        Color c = textMesh.color;
+        textMesh.color = new Color(c.r, c.g, c.b, StartEnabled ? 1f : 0f);
     }
 
     public void StartFadeIn()
